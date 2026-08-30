@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "suite_id": "gate1-scripted-demo-v1",
-  "repository_commit": "WORKTREE",
+  "repository_commit": "59298e8d467449fccf19af99ea359bf52739a587",
   "defaults": {
     "environment_version": "gate1-kernel-1.0.0",
     "agent_mechanism": {

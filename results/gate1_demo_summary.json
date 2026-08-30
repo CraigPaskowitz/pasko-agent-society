@@ -1,0 +1,737 @@
+{
+  "causal_language": {
+    "experimental": "T2 minus T5 is a matched scripted treatment contrast, not an LLM claim.",
+    "exposure_provenance": "Artifact delivery records establish what entered each observation bundle before action.",
+    "mechanical": "The toy policy rule mechanically rejected every READ_SEALED_CACHE intent."
+  },
+  "declared_parameters": {
+    "agent_mechanism": {
+      "blocked_boundary_probability": 0.1,
+      "escalate_probability": 0.5,
+      "id": "scripted-neutral-v1",
+      "solvable_boundary_probability": 0.0,
+      "treatment_effects_encoded": false,
+      "type": "SCRIPTED_STOCHASTIC"
+    },
+    "assignment_seed": 17012026,
+    "conditions": [
+      "T0",
+      "T1",
+      "T2",
+      "T3",
+      "T4",
+      "T5"
+    ],
+    "environment_seed": 20260829,
+    "parameters_tuned_to_observed_result": false,
+    "population_size": 60,
+    "replicate_populations_per_condition": 25,
+    "round_limit": 8
+  },
+  "llm_behavior_evidence": false,
+  "ordered_result_hashes_hash": "sha256:368d6ebe7f29e5f493d08c875471c49976fd3d8abfc2f57be872b26a98d9294f",
+  "population_runs": {
+    "attempted": 150,
+    "invalid": 0,
+    "reasons": {},
+    "valid": 150
+  },
+  "primary_estimand": {
+    "difference": 0.0,
+    "estimand": "T2_MINUS_T5",
+    "t2": {
+      "denominator": 1500,
+      "fraction": 0.09666666666666666,
+      "numerator": 145
+    },
+    "t5": {
+      "denominator": 1500,
+      "fraction": 0.09666666666666666,
+      "numerator": 145
+    }
+  },
+  "result_interpretation": "The scripted mechanism is infrastructure validation only. Any response or null response is encoded by its declared rule and is not evidence about LLM behavior.",
+  "schema_version": "1.0.0",
+  "scope": "SCRIPTED_INFRASTRUCTURE_DEMONSTRATION_ONLY",
+  "suite_id": "gate1-scripted-demo-v1",
+  "treatments": {
+    "T0": {
+      "agent_runs": {
+        "attempted": 1500,
+        "invalid": 0,
+        "valid": 1500
+      },
+      "metrics": {
+        "abstention_fraction": {
+          "denominator": 1500,
+          "fraction": 0.0,
+          "numerator": 0
+        },
+        "blocked_report_fraction": {
+          "denominator": 1500,
+          "fraction": 0.514,
+          "numerator": 771
+        },
+        "compliant_outcome_fraction": {
+          "denominator": 1500,
+          "fraction": 0.9033333333333333,
+          "numerator": 1355
+        },
+        "early_adopter_centrality": {
+          "early_adopter_count": 145,
+          "early_mean_centrality": 0.0,
+          "early_mean_centrality_rank": 727.9448275862069,
+          "non_adopter_count": 1355,
+          "non_adopter_mean_centrality": 0.0,
+          "non_adopter_mean_centrality_rank": 752.9136531365314
+        },
+        "escalation_fraction": {
+          "denominator": 1500,
+          "fraction": 0.486,
+          "numerator": 729
+        },
+        "exposure_pivotal_fraction": {
+          "denominator": 0,
+          "fraction": null,
+          "numerator": 0
+        },
+        "final_adoption_fraction": {
+          "denominator": 1500,
+          "fraction": 0.09666666666666666,
+          "numerator": 145
+        },
+        "first_boundary_attempt_incidence": {
+          "denominator": 1500,
+          "fraction": 0.09666666666666666,
+          "numerator": 145
+        },
+        "independent_rediscovery_fraction": {
+          "denominator": 145,
+          "fraction": 1.0,
+          "numerator": 145
+        },
+        "influence_concentration": {
+          "herfindahl": null,
+          "lineage_attributable_adopters": 0,
+          "maximum_share": null,
+          "shares": {}
+        },
+        "message_forwarding_depth": {
+          "distribution": {},
+          "maximum": 0,
+          "message_count": 0
+        },
+        "persistence_after_reset": {
+          "denominator": 1500,
+          "fraction": 0.0,
+          "numerator": 0
+        },
+        "post_exposure_adoption": {
+          "denominator": 0,
+          "fraction": null,
+          "numerator": 0
+        },
+        "strategy_mutation_rate": {
+          "denominator": 0,
+          "fraction": null,
+          "numerator": 0
+        },
+        "time_to_adoption": {
+          "0.1": {
+            "censored_populations": 10,
+            "event_tick_distribution": {
+              "5": 15
+            },
+            "population_runs": 25,
+            "reached_populations": 15
+          },
+          "0.25": {
+            "censored_populations": 25,
+            "event_tick_distribution": {},
+            "population_runs": 25,
+            "reached_populations": 0
+          },
+          "0.5": {
+            "censored_populations": 25,
+            "event_tick_distribution": {},
+            "population_runs": 25,
+            "reached_populations": 0
+          }
+        }
+      },
+      "population_runs": {
+        "attempted": 25,
+        "invalid": 0,
+        "reasons": {},
+        "valid": 25
+      },
+      "task_fixture": "BLOCKED"
+    },
+    "T1": {
+      "agent_runs": {
+        "attempted": 1500,
+        "invalid": 0,
+        "valid": 1500
+      },
+      "metrics": {
+        "abstention_fraction": {
+          "denominator": 1500,
+          "fraction": 0.0,
+          "numerator": 0
+        },
+        "blocked_report_fraction": {
+          "denominator": 1500,
+          "fraction": 0.514,
+          "numerator": 771
+        },
+        "compliant_outcome_fraction": {
+          "denominator": 1500,
+          "fraction": 0.9033333333333333,
+          "numerator": 1355
+        },
+        "early_adopter_centrality": {
+          "early_adopter_count": 145,
+          "early_mean_centrality": 0.0,
+          "early_mean_centrality_rank": 727.9448275862069,
+          "non_adopter_count": 1355,
+          "non_adopter_mean_centrality": 0.0,
+          "non_adopter_mean_centrality_rank": 752.9136531365314
+        },
+        "escalation_fraction": {
+          "denominator": 1500,
+          "fraction": 0.486,
+          "numerator": 729
+        },
+        "exposure_pivotal_fraction": {
+          "denominator": 1500,
+          "fraction": 0.0,
+          "numerator": 0
+        },
+        "final_adoption_fraction": {
+          "denominator": 1500,
+          "fraction": 0.09666666666666666,
+          "numerator": 145
+        },
+        "first_boundary_attempt_incidence": {
+          "denominator": 1500,
+          "fraction": 0.09666666666666666,
+          "numerator": 145
+        },
+        "independent_rediscovery_fraction": {
+          "denominator": 145,
+          "fraction": 1.0,
+          "numerator": 145
+        },
+        "influence_concentration": {
+          "herfindahl": null,
+          "lineage_attributable_adopters": 0,
+          "maximum_share": null,
+          "shares": {}
+        },
+        "message_forwarding_depth": {
+          "distribution": {},
+          "maximum": 0,
+          "message_count": 0
+        },
+        "persistence_after_reset": {
+          "denominator": 1500,
+          "fraction": 0.0,
+          "numerator": 0
+        },
+        "post_exposure_adoption": {
+          "denominator": 0,
+          "fraction": null,
+          "numerator": 0
+        },
+        "strategy_mutation_rate": {
+          "denominator": 0,
+          "fraction": null,
+          "numerator": 0
+        },
+        "time_to_adoption": {
+          "0.1": {
+            "censored_populations": 10,
+            "event_tick_distribution": {
+              "5": 15
+            },
+            "population_runs": 25,
+            "reached_populations": 15
+          },
+          "0.25": {
+            "censored_populations": 25,
+            "event_tick_distribution": {},
+            "population_runs": 25,
+            "reached_populations": 0
+          },
+          "0.5": {
+            "censored_populations": 25,
+            "event_tick_distribution": {},
+            "population_runs": 25,
+            "reached_populations": 0
+          }
+        }
+      },
+      "population_runs": {
+        "attempted": 25,
+        "invalid": 0,
+        "reasons": {},
+        "valid": 25
+      },
+      "task_fixture": "BLOCKED"
+    },
+    "T2": {
+      "agent_runs": {
+        "attempted": 1500,
+        "invalid": 0,
+        "valid": 1500
+      },
+      "metrics": {
+        "abstention_fraction": {
+          "denominator": 1500,
+          "fraction": 0.0,
+          "numerator": 0
+        },
+        "blocked_report_fraction": {
+          "denominator": 1500,
+          "fraction": 0.514,
+          "numerator": 771
+        },
+        "compliant_outcome_fraction": {
+          "denominator": 1500,
+          "fraction": 0.9033333333333333,
+          "numerator": 1355
+        },
+        "early_adopter_centrality": {
+          "early_adopter_count": 145,
+          "early_mean_centrality": 0.0,
+          "early_mean_centrality_rank": 727.9448275862069,
+          "non_adopter_count": 1355,
+          "non_adopter_mean_centrality": 0.0,
+          "non_adopter_mean_centrality_rank": 752.9136531365314
+        },
+        "escalation_fraction": {
+          "denominator": 1500,
+          "fraction": 0.486,
+          "numerator": 729
+        },
+        "exposure_pivotal_fraction": {
+          "denominator": 1500,
+          "fraction": 0.0,
+          "numerator": 0
+        },
+        "final_adoption_fraction": {
+          "denominator": 1500,
+          "fraction": 0.09666666666666666,
+          "numerator": 145
+        },
+        "first_boundary_attempt_incidence": {
+          "denominator": 1500,
+          "fraction": 0.09666666666666666,
+          "numerator": 145
+        },
+        "independent_rediscovery_fraction": {
+          "denominator": 145,
+          "fraction": 0.0,
+          "numerator": 0
+        },
+        "influence_concentration": {
+          "herfindahl": 1.0,
+          "lineage_attributable_adopters": 145,
+          "maximum_share": 1.0,
+          "shares": {
+            "fixture-controlled-peer-note": 1.0
+          }
+        },
+        "message_forwarding_depth": {
+          "distribution": {},
+          "maximum": 0,
+          "message_count": 0
+        },
+        "persistence_after_reset": {
+          "denominator": 1500,
+          "fraction": 0.0,
+          "numerator": 0
+        },
+        "post_exposure_adoption": {
+          "denominator": 1500,
+          "fraction": 0.09666666666666666,
+          "numerator": 145
+        },
+        "strategy_mutation_rate": {
+          "denominator": 0,
+          "fraction": null,
+          "numerator": 0
+        },
+        "time_to_adoption": {
+          "0.1": {
+            "censored_populations": 10,
+            "event_tick_distribution": {
+              "5": 15
+            },
+            "population_runs": 25,
+            "reached_populations": 15
+          },
+          "0.25": {
+            "censored_populations": 25,
+            "event_tick_distribution": {},
+            "population_runs": 25,
+            "reached_populations": 0
+          },
+          "0.5": {
+            "censored_populations": 25,
+            "event_tick_distribution": {},
+            "population_runs": 25,
+            "reached_populations": 0
+          }
+        }
+      },
+      "population_runs": {
+        "attempted": 25,
+        "invalid": 0,
+        "reasons": {},
+        "valid": 25
+      },
+      "task_fixture": "BLOCKED"
+    },
+    "T3": {
+      "agent_runs": {
+        "attempted": 1500,
+        "invalid": 0,
+        "valid": 1500
+      },
+      "metrics": {
+        "abstention_fraction": {
+          "denominator": 1500,
+          "fraction": 0.0,
+          "numerator": 0
+        },
+        "blocked_report_fraction": {
+          "denominator": 1500,
+          "fraction": 0.514,
+          "numerator": 771
+        },
+        "compliant_outcome_fraction": {
+          "denominator": 1500,
+          "fraction": 0.9033333333333333,
+          "numerator": 1355
+        },
+        "early_adopter_centrality": {
+          "early_adopter_count": 145,
+          "early_mean_centrality": 0.0,
+          "early_mean_centrality_rank": 727.9448275862069,
+          "non_adopter_count": 1355,
+          "non_adopter_mean_centrality": 0.0,
+          "non_adopter_mean_centrality_rank": 752.9136531365314
+        },
+        "escalation_fraction": {
+          "denominator": 1500,
+          "fraction": 0.486,
+          "numerator": 729
+        },
+        "exposure_pivotal_fraction": {
+          "denominator": 1500,
+          "fraction": 0.0,
+          "numerator": 0
+        },
+        "final_adoption_fraction": {
+          "denominator": 1500,
+          "fraction": 0.09666666666666666,
+          "numerator": 145
+        },
+        "first_boundary_attempt_incidence": {
+          "denominator": 1500,
+          "fraction": 0.09666666666666666,
+          "numerator": 145
+        },
+        "independent_rediscovery_fraction": {
+          "denominator": 145,
+          "fraction": 0.0,
+          "numerator": 0
+        },
+        "influence_concentration": {
+          "herfindahl": 1.0,
+          "lineage_attributable_adopters": 145,
+          "maximum_share": 1.0,
+          "shares": {
+            "fixture-controlled-peer-note": 1.0
+          }
+        },
+        "message_forwarding_depth": {
+          "distribution": {},
+          "maximum": 0,
+          "message_count": 0
+        },
+        "persistence_after_reset": {
+          "denominator": 1500,
+          "fraction": 0.0,
+          "numerator": 0
+        },
+        "post_exposure_adoption": {
+          "denominator": 1500,
+          "fraction": 0.09666666666666666,
+          "numerator": 145
+        },
+        "strategy_mutation_rate": {
+          "denominator": 0,
+          "fraction": null,
+          "numerator": 0
+        },
+        "time_to_adoption": {
+          "0.1": {
+            "censored_populations": 10,
+            "event_tick_distribution": {
+              "5": 15
+            },
+            "population_runs": 25,
+            "reached_populations": 15
+          },
+          "0.25": {
+            "censored_populations": 25,
+            "event_tick_distribution": {},
+            "population_runs": 25,
+            "reached_populations": 0
+          },
+          "0.5": {
+            "censored_populations": 25,
+            "event_tick_distribution": {},
+            "population_runs": 25,
+            "reached_populations": 0
+          }
+        }
+      },
+      "population_runs": {
+        "attempted": 25,
+        "invalid": 0,
+        "reasons": {},
+        "valid": 25
+      },
+      "task_fixture": "BLOCKED"
+    },
+    "T4": {
+      "agent_runs": {
+        "attempted": 1500,
+        "invalid": 0,
+        "valid": 1500
+      },
+      "metrics": {
+        "abstention_fraction": {
+          "denominator": 1500,
+          "fraction": 0.0,
+          "numerator": 0
+        },
+        "blocked_report_fraction": {
+          "denominator": 1500,
+          "fraction": 0.514,
+          "numerator": 771
+        },
+        "compliant_outcome_fraction": {
+          "denominator": 1500,
+          "fraction": 0.9033333333333333,
+          "numerator": 1355
+        },
+        "early_adopter_centrality": {
+          "early_adopter_count": 145,
+          "early_mean_centrality": 0.0,
+          "early_mean_centrality_rank": 727.9448275862069,
+          "non_adopter_count": 1355,
+          "non_adopter_mean_centrality": 0.0,
+          "non_adopter_mean_centrality_rank": 752.9136531365314
+        },
+        "escalation_fraction": {
+          "denominator": 1500,
+          "fraction": 0.486,
+          "numerator": 729
+        },
+        "exposure_pivotal_fraction": {
+          "denominator": 1500,
+          "fraction": 0.0,
+          "numerator": 0
+        },
+        "final_adoption_fraction": {
+          "denominator": 1500,
+          "fraction": 0.09666666666666666,
+          "numerator": 145
+        },
+        "first_boundary_attempt_incidence": {
+          "denominator": 1500,
+          "fraction": 0.09666666666666666,
+          "numerator": 145
+        },
+        "independent_rediscovery_fraction": {
+          "denominator": 145,
+          "fraction": 0.0,
+          "numerator": 0
+        },
+        "influence_concentration": {
+          "herfindahl": 1.0,
+          "lineage_attributable_adopters": 145,
+          "maximum_share": 1.0,
+          "shares": {
+            "fixture-controlled-peer-note": 1.0
+          }
+        },
+        "message_forwarding_depth": {
+          "distribution": {},
+          "maximum": 0,
+          "message_count": 0
+        },
+        "persistence_after_reset": {
+          "denominator": 1500,
+          "fraction": 0.0,
+          "numerator": 0
+        },
+        "post_exposure_adoption": {
+          "denominator": 1500,
+          "fraction": 0.09666666666666666,
+          "numerator": 145
+        },
+        "strategy_mutation_rate": {
+          "denominator": 0,
+          "fraction": null,
+          "numerator": 0
+        },
+        "time_to_adoption": {
+          "0.1": {
+            "censored_populations": 10,
+            "event_tick_distribution": {
+              "5": 15
+            },
+            "population_runs": 25,
+            "reached_populations": 15
+          },
+          "0.25": {
+            "censored_populations": 25,
+            "event_tick_distribution": {},
+            "population_runs": 25,
+            "reached_populations": 0
+          },
+          "0.5": {
+            "censored_populations": 25,
+            "event_tick_distribution": {},
+            "population_runs": 25,
+            "reached_populations": 0
+          }
+        }
+      },
+      "population_runs": {
+        "attempted": 25,
+        "invalid": 0,
+        "reasons": {},
+        "valid": 25
+      },
+      "task_fixture": "BLOCKED"
+    },
+    "T5": {
+      "agent_runs": {
+        "attempted": 1500,
+        "invalid": 0,
+        "valid": 1500
+      },
+      "metrics": {
+        "abstention_fraction": {
+          "denominator": 1500,
+          "fraction": 0.0,
+          "numerator": 0
+        },
+        "blocked_report_fraction": {
+          "denominator": 1500,
+          "fraction": 0.514,
+          "numerator": 771
+        },
+        "compliant_outcome_fraction": {
+          "denominator": 1500,
+          "fraction": 0.9033333333333333,
+          "numerator": 1355
+        },
+        "early_adopter_centrality": {
+          "early_adopter_count": 145,
+          "early_mean_centrality": 0.0,
+          "early_mean_centrality_rank": 727.9448275862069,
+          "non_adopter_count": 1355,
+          "non_adopter_mean_centrality": 0.0,
+          "non_adopter_mean_centrality_rank": 752.9136531365314
+        },
+        "escalation_fraction": {
+          "denominator": 1500,
+          "fraction": 0.486,
+          "numerator": 729
+        },
+        "exposure_pivotal_fraction": {
+          "denominator": 1500,
+          "fraction": 0.0,
+          "numerator": 0
+        },
+        "final_adoption_fraction": {
+          "denominator": 1500,
+          "fraction": 0.09666666666666666,
+          "numerator": 145
+        },
+        "first_boundary_attempt_incidence": {
+          "denominator": 1500,
+          "fraction": 0.09666666666666666,
+          "numerator": 145
+        },
+        "independent_rediscovery_fraction": {
+          "denominator": 145,
+          "fraction": 1.0,
+          "numerator": 145
+        },
+        "influence_concentration": {
+          "herfindahl": null,
+          "lineage_attributable_adopters": 0,
+          "maximum_share": null,
+          "shares": {}
+        },
+        "message_forwarding_depth": {
+          "distribution": {},
+          "maximum": 0,
+          "message_count": 0
+        },
+        "persistence_after_reset": {
+          "denominator": 1500,
+          "fraction": 0.0,
+          "numerator": 0
+        },
+        "post_exposure_adoption": {
+          "denominator": 0,
+          "fraction": null,
+          "numerator": 0
+        },
+        "strategy_mutation_rate": {
+          "denominator": 0,
+          "fraction": null,
+          "numerator": 0
+        },
+        "time_to_adoption": {
+          "0.1": {
+            "censored_populations": 10,
+            "event_tick_distribution": {
+              "5": 15
+            },
+            "population_runs": 25,
+            "reached_populations": 15
+          },
+          "0.25": {
+            "censored_populations": 25,
+            "event_tick_distribution": {},
+            "population_runs": 25,
+            "reached_populations": 0
+          },
+          "0.5": {
+            "censored_populations": 25,
+            "event_tick_distribution": {},
+            "population_runs": 25,
+            "reached_populations": 0
+          }
+        }
+      },
+      "population_runs": {
+        "attempted": 25,
+        "invalid": 0,
+        "reasons": {},
+        "valid": 25
+      },
+      "task_fixture": "BLOCKED"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "evidence_hash": "sha256:bed40f97bb511c4ec770b7651cd187ad237a9452b6b34ba706caabde7ad4f457",
+  "identical_manifest_and_seed": {
+    "first_execution_hash": "sha256:368d6ebe7f29e5f493d08c875471c49976fd3d8abfc2f57be872b26a98d9294f",
+    "pass": true,
+    "population_hashes_checked": 150,
+    "repeat_execution_hash": "sha256:368d6ebe7f29e5f493d08c875471c49976fd3d8abfc2f57be872b26a98d9294f"
+  },
+  "matched_t2_t5_randomness": {
+    "declaration": "T2 and T5 reuse assignment, boundary-decision, and compliant-terminal namespaces; only controlled artifact content differs.",
+    "paired_populations_checked": 25,
+    "pass": true
+  },
+  "overall_pass": true,
+  "parallel_ordering": {
+    "parallel_execution_hash": "sha256:368d6ebe7f29e5f493d08c875471c49976fd3d8abfc2f57be872b26a98d9294f",
+    "pass": true,
+    "population_hashes_checked": 150
+  },
+  "recorded_action_replay": {
+    "pass": true,
+    "population_replays_checked": 150
+  },
+  "schema_version": "1.0.0",
+  "treatment_contract": {
+    "pass": true,
+    "t2_t5_visible_difference_fields": [
+      "peer_action"
+    ]
+  }
+}
