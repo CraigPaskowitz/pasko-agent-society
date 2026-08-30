@@ -28,7 +28,16 @@ PREREGISTRATION = ROOT / "preregistrations" / "GATE_1_2_PREREGISTRATION.md"
 
 class Gate12ManifestTests(unittest.TestCase):
     def test_manifest_binds_all_frozen_campaign_counts(self) -> None:
-        spec = load_suite_spec(MANIFEST)
+        spec = load_suite_spec(MANIFEST, require_certified=True)
+        self.assertEqual(spec.implementation_status, "CERTIFIED_CANDIDATE")
+        self.assertEqual(
+            spec.implementation_commit,
+            "798985dc77dac6a327848ff4c29445417a616094",
+        )
+        self.assertEqual(
+            spec.implementation_source_hash,
+            "bbbcffc40390a357337b154e9d6ed578e41f451fc8c6105a0ea3c83418311bf2",
+        )
         self.assertEqual(spec.raw["expected_artifacts"]["independent_units"], 14000)
         self.assertEqual(spec.raw["expected_artifacts"]["condition_runs"], 30000)
         self.assertEqual(spec.raw["expected_artifacts"]["pair_chunks"], 13000)

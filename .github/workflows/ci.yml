@@ -32,5 +32,10 @@ jobs:
           if [ -d results/gate1_1 ]; then
             python scripts/validate_gate11_result.py
           fi
+      - name: Gate 1.2 certified implementation
+        run: |
+          if [ -f manifests/gate1_2_suite_v1.json ]; then
+            python scripts/validate_gate12_implementation.py
+          fi
       - name: Whitespace check
         run: git diff --check

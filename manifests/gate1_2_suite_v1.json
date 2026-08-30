@@ -372,10 +372,10 @@
     "suite_completion_manifests": 1
   },
   "implementation": {
-    "commit": "PENDING",
+    "commit": "798985dc77dac6a327848ff4c29445417a616094",
     "proposed_tag": "gate1.2-impl-v1",
-    "source_bundle_sha256": "PENDING",
-    "status": "PENDING_CERTIFICATION"
+    "source_bundle_sha256": "bbbcffc40390a357337b154e9d6ed578e41f451fc8c6105a0ea3c83418311bf2",
+    "status": "CERTIFIED_CANDIDATE"
   },
   "protocol": {
     "gate1_1_provenance": {
