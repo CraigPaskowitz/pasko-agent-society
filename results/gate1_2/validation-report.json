@@ -1,0 +1,74 @@
+{
+  "analysis_integrity": {
+    "analysis_content_hash": "sha256:f1ab741de5b57e9ccaaab437299992538baa549d1bb2de4c59a5cd7c1220e7f0",
+    "analysis_file_sha256": "5095dfb4a6b3e692b94046a1128ed30c28da3de0b4eba8e7dd7e2a644d4f7c32",
+    "analysis_run_count": 1,
+    "classification": "replicated but specification-sensitive",
+    "status": "PASS"
+  },
+  "campaign_integrity": {
+    "child_completion_manifests": 12,
+    "condition_runs": 30000,
+    "duplicate_units": 0,
+    "independent_units": 14000,
+    "invalid_units": 0,
+    "missing_units": 0,
+    "ordered_suite_ensemble_hash": "sha256:7a2554574aa0083bc1007c6dd4c61d07aff86f38062d0ff83e0ee9985c604661",
+    "raw_chunks_recomputed": 0,
+    "status": "PASS",
+    "suite_completion_content_hash": "sha256:c111cd3bad274cd83b54298545112d513e5c216d391204b0b6bd56f68ebd332f",
+    "suite_completion_file_sha256": "2e7a5fd78fed7b5715516737f53c54a70f1e62c82659522b5cba4b187f36c7b3",
+    "subcampaigns": 12
+  },
+  "clean_validation": {
+    "compile": "PASS",
+    "credential_scan": "PASS",
+    "external_io_scan": "PASS",
+    "full_test_count": 153,
+    "full_tests": "PASS",
+    "gate1_1_regression": "PASS",
+    "gate1_2_result_validator": "PASS",
+    "git_diff_check": "PASS",
+    "llm_dependency_scan": "PASS",
+    "offensive_capability_scan": "PASS",
+    "private_path_scan": "PASS",
+    "safety_privacy_scan": "PASS",
+    "validation_environment": "artifact-free staged export and exact local result commit clean clone"
+  },
+  "implementation_publication": {
+    "branch": "gate-1.2-implementation",
+    "branch_ci": {
+      "python_3_11": "PASS",
+      "python_3_12": "PASS",
+      "run_id": 33333524280
+    },
+    "branch_commit": "b4ca7b598215d14102969045e4717cd5007f1bc3",
+    "source_bundle_sha256": "bbbcffc40390a357337b154e9d6ed578e41f451fc8c6105a0ea3c83418311bf2",
+    "tag": "gate1.2-impl-v1",
+    "tag_ci": {
+      "python_3_11": "PASS",
+      "python_3_12": "PASS",
+      "run_id": 33333524724
+    },
+    "tag_object": "34fd68e4a40971164e2ba76d4fa8c5e0316c8edd",
+    "tag_target": "b4ca7b598215d14102969045e4717cd5007f1bc3"
+  },
+  "package_boundary": {
+    "gate2_started": false,
+    "llm_adapter_present": false,
+    "private_or_credential_material_present": false,
+    "raw_chunk_bytes_local": 4723985416,
+    "raw_chunks_in_compact_package": 0,
+    "raw_chunks_represented_by_completion_manifests": 14000,
+    "result_published": false
+  },
+  "preregistration_integrity": {
+    "commit": "c6e9506525d8e6088a6ecb6f417e375e040fd9aa",
+    "document_sha256": "28e2240b159cad032dbf3d80f28a6d309f80fa11e5ebd9c3edd7d3bc230c8a17",
+    "status": "PASS",
+    "tag": "gate1.2-prereg-v1"
+  },
+  "schema_version": "gate12-validation-report-v1",
+  "status": "PASS",
+  "working_checkout_disclosure": "The execution checkout contains the ignored 4.4 GB canonical production artifact tree. Tests whose clean-boundary invariant requires that directory to be absent are run in an artifact-free staged export and clean clone. No canonical artifact was deleted or altered to make the execution checkout appear clean."
+}

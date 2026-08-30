@@ -1,0 +1,121 @@
+{
+  "artifact_state": {
+    "completion_manifests_exist": false,
+    "gate1_2_analysis_exists": false,
+    "production_campaign_directory_preexisting": false,
+    "production_checkpoint_exists": false,
+    "production_outcome_artifacts_exist": false,
+    "treatment_separated_scientific_result_inspected": false
+  },
+  "campaign_specification": {
+    "canonical_hash": "sha256:f529f43d05228602ec4d13684b928d7f390fdbb7962f3805ff408af8fa32ee54",
+    "file": "manifests/gate1_2_suite_v1.json",
+    "file_sha256": "89ff2c154a2fb093484c1e6a358de725455ff727ad65f5f88153081b6c60901d"
+  },
+  "execution": {
+    "branch": "gate-1.2-execution",
+    "implementation_base_head": "b4ca7b598215d14102969045e4717cd5007f1bc3"
+  },
+  "gate1_1_result": {
+    "commit": "43081df22f7b84ba16c2cf7e8edca28b45105ac4",
+    "evidence_index_sha256": "648826dadfd52bb6fe572ee3532a23f6266074113768fa7e279f636167d147ba",
+    "tag": "gate1.1-result-v1"
+  },
+  "gate1_2_implementation": {
+    "certification_commit": "b4ca7b598215d14102969045e4717cd5007f1bc3",
+    "scientific_code_commit": "798985dc77dac6a327848ff4c29445417a616094",
+    "source_bundle_sha256": "bbbcffc40390a357337b154e9d6ed578e41f451fc8c6105a0ea3c83418311bf2",
+    "tag": "gate1.2-impl-v1",
+    "tag_object": "34fd68e4a40971164e2ba76d4fa8c5e0316c8edd"
+  },
+  "gate1_2_preregistration": {
+    "commit": "c6e9506525d8e6088a6ecb6f417e375e040fd9aa",
+    "document_sha256": "28e2240b159cad032dbf3d80f28a6d309f80fa11e5ebd9c3edd7d3bc230c8a17",
+    "tag": "gate1.2-prereg-v1"
+  },
+  "recorded_at_utc": "2026-08-30T20:24:46Z",
+  "schema_version": "gate12-pre-execution-receipt-v1",
+  "status": {
+    "condition_runs_generated": 0,
+    "independent_units_completed": 0,
+    "independent_units_invalid": 0,
+    "independent_units_pending": 14000,
+    "integrity_status": "PASS",
+    "production_outcome_generating_runs": 0,
+    "subcampaigns": [
+      {
+        "completed": 0,
+        "invalid": 0,
+        "pending": 3000,
+        "subcampaign_id": "gate12-replication-3000-v1"
+      },
+      {
+        "completed": 0,
+        "invalid": 0,
+        "pending": 1000,
+        "subcampaign_id": "gate12-standard-robustness-1000-v1:p-1-of-8"
+      },
+      {
+        "completed": 0,
+        "invalid": 0,
+        "pending": 1000,
+        "subcampaign_id": "gate12-standard-robustness-1000-v1:p-3-of-8"
+      },
+      {
+        "completed": 0,
+        "invalid": 0,
+        "pending": 1000,
+        "subcampaign_id": "gate12-standard-robustness-1000-v1:seeds-3"
+      },
+      {
+        "completed": 0,
+        "invalid": 0,
+        "pending": 1000,
+        "subcampaign_id": "gate12-standard-robustness-1000-v1:seeds-12"
+      },
+      {
+        "completed": 0,
+        "invalid": 0,
+        "pending": 1000,
+        "subcampaign_id": "gate12-standard-robustness-1000-v1:rounds-4"
+      },
+      {
+        "completed": 0,
+        "invalid": 0,
+        "pending": 1000,
+        "subcampaign_id": "gate12-standard-robustness-1000-v1:rounds-12"
+      },
+      {
+        "completed": 0,
+        "invalid": 0,
+        "pending": 1000,
+        "subcampaign_id": "gate12-standard-robustness-1000-v1:swaps-360"
+      },
+      {
+        "completed": 0,
+        "invalid": 0,
+        "pending": 1000,
+        "subcampaign_id": "gate12-standard-robustness-1000-v1:swaps-840"
+      },
+      {
+        "completed": 0,
+        "invalid": 0,
+        "pending": 1000,
+        "subcampaign_id": "gate12-standard-robustness-1000-v1:seed-placement-clustered"
+      },
+      {
+        "completed": 0,
+        "invalid": 0,
+        "pending": 1000,
+        "subcampaign_id": "gate12-standard-robustness-1000-v1:seed-placement-dispersed"
+      },
+      {
+        "completed": 0,
+        "invalid": 0,
+        "pending": 1000,
+        "subcampaign_id": "gate12-alt-topology-1000-v1"
+      }
+    ]
+  },
+  "statement": "The Gate 1.2 protocol, certified implementation, Gate 1.1 result, and Gate 1.2 robustness criteria were frozen publicly before any canonical Gate 1.2 outcome generation."
+}

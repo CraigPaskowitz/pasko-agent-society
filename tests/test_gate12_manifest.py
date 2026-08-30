@@ -116,7 +116,13 @@ class Gate12ManifestTests(unittest.TestCase):
         self.assertNotIn('"gate1_2_estimate"', text)
         self.assertNotIn('"treatment_result"', text)
         self.assertFalse((ROOT / "artifacts" / "gate1_2_v1").exists())
-        self.assertFalse((ROOT / "results" / "gate1_2").exists())
+        result = ROOT / "results" / "gate1_2"
+        if result.exists():
+            self.assertTrue((result / "evidence-index.json").exists())
+            self.assertEqual(
+                (result / "campaign-specification.json").read_bytes(),
+                MANIFEST.read_bytes(),
+            )
 
 
 if __name__ == "__main__":

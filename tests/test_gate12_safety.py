@@ -64,22 +64,24 @@ class Gate12SafetyTests(unittest.TestCase):
         for forbidden in ("os.system(", "eval(", "exec(", "subprocess.", "requests."):
             self.assertNotIn(forbidden, source)
 
-    def test_no_llm_adapter_or_gate12_production_artifact_exists(self) -> None:
+    def test_no_llm_adapter_or_raw_gate12_production_artifact_exists(self) -> None:
         self.assertFalse((ROOT / "pasko_agent_society" / "gate12" / "llm_adapter.py").exists())
         self.assertFalse((ROOT / "artifacts" / "gate1_2_v1").exists())
-        self.assertFalse((ROOT / "results" / "gate1_2").exists())
+        result = ROOT / "results" / "gate1_2"
+        if result.exists():
+            self.assertTrue((result / "evidence-index.json").exists())
+            self.assertTrue((ROOT / "scripts" / "validate_gate12_result.py").exists())
+            self.assertFalse(any(path.name == "chunks" for path in result.rglob("*")))
 
-    def test_no_production_seed_topology_or_outcome_fixture_is_tracked(self) -> None:
+    def test_no_raw_production_seed_topology_or_chunk_fixture_is_tracked(self) -> None:
         tracked_names = [
             path.relative_to(ROOT).as_posix()
             for path in ROOT.rglob("*")
             if path.is_file() and ".git" not in path.parts and "__pycache__" not in path.parts
         ]
-        prohibited_prefixes = (
-            "artifacts/gate1_2_v1/",
-            "results/gate1_2/",
-        )
+        prohibited_prefixes = ("artifacts/gate1_2_v1/",)
         self.assertFalse(any(name.startswith(prohibited_prefixes) for name in tracked_names))
+        self.assertFalse(any("/chunks/" in name for name in tracked_names))
 
 
 if __name__ == "__main__":

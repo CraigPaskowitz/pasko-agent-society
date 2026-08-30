@@ -1,0 +1,113 @@
+{
+  "condition_run_count": 30000,
+  "content_hash": "sha256:c111cd3bad274cd83b54298545112d513e5c216d391204b0b6bd56f68ebd332f",
+  "duplicate_unit_count": 0,
+  "implementation_commit": "798985dc77dac6a327848ff4c29445417a616094",
+  "implementation_source_hash": "bbbcffc40390a357337b154e9d6ed578e41f451fc8c6105a0ea3c83418311bf2",
+  "independent_unit_count": 14000,
+  "invalid_unit_count": 0,
+  "missing_unit_count": 0,
+  "ordered_subcampaigns": [
+    {
+      "cell_id": "alternate-topology-3",
+      "completion_manifest_hash": "sha256:25d748a8441f9325dc6b36c8b23925b228c8cc52e2b7a34c161544b5fab0f640",
+      "ordered_ensemble_hash": "sha256:a5552ba831a7d60c66ad5f70ab61b8a9c58eb115a15bae5b11a58b4dd4a78802",
+      "subcampaign_id": "gate12-alt-topology-1000-v1",
+      "unit_kind": "cluster",
+      "valid_unit_count": 1000
+    },
+    {
+      "cell_id": null,
+      "completion_manifest_hash": "sha256:06857bfebd4d4510d900bed05bef0602666556147017445cc21bd0db40cd6298",
+      "ordered_ensemble_hash": "sha256:3688ae31b4dcc1ec2a20dca6d7241fbf647ae46d10c811d746584f484672b1d1",
+      "subcampaign_id": "gate12-replication-3000-v1",
+      "unit_kind": "pair",
+      "valid_unit_count": 3000
+    },
+    {
+      "cell_id": "p-1-of-8",
+      "completion_manifest_hash": "sha256:59f814cb5a51c8c59ff151f8daa28267ea97dc009e2fbc17b45c42e31529378f",
+      "ordered_ensemble_hash": "sha256:96494dcaba6870b1fa4d1fb39fbaa2a7e037f6e0c71d71150325a1c989954a54",
+      "subcampaign_id": "gate12-standard-robustness-1000-v1:p-1-of-8",
+      "unit_kind": "pair",
+      "valid_unit_count": 1000
+    },
+    {
+      "cell_id": "p-3-of-8",
+      "completion_manifest_hash": "sha256:3990ff53155d22ba78f37a2f5510e53494b29c656bcb49eedb0a118375609b48",
+      "ordered_ensemble_hash": "sha256:aba84778ae7993f064028a2c80db14cb2359448a725fbd2f4f14ed9a3622452d",
+      "subcampaign_id": "gate12-standard-robustness-1000-v1:p-3-of-8",
+      "unit_kind": "pair",
+      "valid_unit_count": 1000
+    },
+    {
+      "cell_id": "rounds-12",
+      "completion_manifest_hash": "sha256:63e4af81a73d3eb851576b90433ecd755874ab786da6e195cd5c17cfa5f7079e",
+      "ordered_ensemble_hash": "sha256:8c8cd6ff913fba3c8c5b6895ef97ceac14271289612335f38e5bba6b357d2ce2",
+      "subcampaign_id": "gate12-standard-robustness-1000-v1:rounds-12",
+      "unit_kind": "pair",
+      "valid_unit_count": 1000
+    },
+    {
+      "cell_id": "rounds-4",
+      "completion_manifest_hash": "sha256:9288587337745adafe49025be766275cd338902501e86a5b8b9c5118faa1ecc1",
+      "ordered_ensemble_hash": "sha256:c441386c2e68592e69af30091791f4d9c922c204a21a3b1f790fcf2360d46692",
+      "subcampaign_id": "gate12-standard-robustness-1000-v1:rounds-4",
+      "unit_kind": "pair",
+      "valid_unit_count": 1000
+    },
+    {
+      "cell_id": "seed-placement-clustered",
+      "completion_manifest_hash": "sha256:7baecfe4e78fbde2758af3e6d4a0c240673a4735f3a2d87f14e950c637fd52a4",
+      "ordered_ensemble_hash": "sha256:bd1a92f18fdb4457e631fdcffd1b79d01ee931482b33c7b6aa0a442818177083",
+      "subcampaign_id": "gate12-standard-robustness-1000-v1:seed-placement-clustered",
+      "unit_kind": "pair",
+      "valid_unit_count": 1000
+    },
+    {
+      "cell_id": "seed-placement-dispersed",
+      "completion_manifest_hash": "sha256:23a821cab5a370097a8d1fb39b2a902176fb1fbb73ae1cd24e666b307ac92e21",
+      "ordered_ensemble_hash": "sha256:dfeba50d000c4313dfc3d33a6c3c242ec20ecf71a89d4520a43861506988e590",
+      "subcampaign_id": "gate12-standard-robustness-1000-v1:seed-placement-dispersed",
+      "unit_kind": "pair",
+      "valid_unit_count": 1000
+    },
+    {
+      "cell_id": "seeds-12",
+      "completion_manifest_hash": "sha256:42ce434f6cf0929cd36dd8aaece7f45dde48adbbe4772418844c15fdf21034dc",
+      "ordered_ensemble_hash": "sha256:545b3b395212e4fe84a7332ba512dafdc59efa0c5921b454da07361be654fc32",
+      "subcampaign_id": "gate12-standard-robustness-1000-v1:seeds-12",
+      "unit_kind": "pair",
+      "valid_unit_count": 1000
+    },
+    {
+      "cell_id": "seeds-3",
+      "completion_manifest_hash": "sha256:60ffefe0a8731215877d7623fe0fcb4962599baa49a4043ff8fec0a616c9a7f7",
+      "ordered_ensemble_hash": "sha256:32b9dd3d9e882c45cde871f3b7c5b8be580575d2968ab78fcd0bfcddc3c2d064",
+      "subcampaign_id": "gate12-standard-robustness-1000-v1:seeds-3",
+      "unit_kind": "pair",
+      "valid_unit_count": 1000
+    },
+    {
+      "cell_id": "swaps-360",
+      "completion_manifest_hash": "sha256:94f35441cde7bee3100c3417f1a5bdc57e722871390f6b4b66eb42a9d37df82b",
+      "ordered_ensemble_hash": "sha256:31d08535e5d1325762ed8bf777504b82440afdc233f22858d2715d439ed492e9",
+      "subcampaign_id": "gate12-standard-robustness-1000-v1:swaps-360",
+      "unit_kind": "pair",
+      "valid_unit_count": 1000
+    },
+    {
+      "cell_id": "swaps-840",
+      "completion_manifest_hash": "sha256:f3ccc6a0a1733f422707d7d7981e2f023472edf4e3fdd4cbe73d26538064e3cd",
+      "ordered_ensemble_hash": "sha256:06d881bb88e8440d0398693e20200e6174c3a7f5bdf11c48ce0f568fa908c7c6",
+      "subcampaign_id": "gate12-standard-robustness-1000-v1:swaps-840",
+      "unit_kind": "pair",
+      "valid_unit_count": 1000
+    }
+  ],
+  "ordered_suite_ensemble_hash": "sha256:7a2554574aa0083bc1007c6dd4c61d07aff86f38062d0ff83e0ee9985c604661",
+  "schema_version": "gate12-suite-completion-v1",
+  "subcampaign_count": 12,
+  "suite_id": "gate12-suite-v1",
+  "suite_spec_hash": "sha256:f529f43d05228602ec4d13684b928d7f390fdbb7962f3805ff408af8fa32ee54"
+}

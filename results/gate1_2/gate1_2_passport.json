@@ -1,0 +1,441 @@
+{
+  "authorities": {
+    "campaign_specification": {
+      "canonical_hash": "sha256:f529f43d05228602ec4d13684b928d7f390fdbb7962f3805ff408af8fa32ee54",
+      "file_sha256": "89ff2c154a2fb093484c1e6a358de725455ff727ad65f5f88153081b6c60901d"
+    },
+    "gate1_1_result": {
+      "commit": "43081df22f7b84ba16c2cf7e8edca28b45105ac4",
+      "estimate": 0.048462962962962965,
+      "tag": "gate1.1-result-v1"
+    },
+    "gate1_2_implementation": {
+      "certification_commit": "b4ca7b598215d14102969045e4717cd5007f1bc3",
+      "scientific_code_commit": "798985dc77dac6a327848ff4c29445417a616094",
+      "source_bundle_sha256": "bbbcffc40390a357337b154e9d6ed578e41f451fc8c6105a0ea3c83418311bf2",
+      "tag": "gate1.2-impl-v1",
+      "tag_object": "34fd68e4a40971164e2ba76d4fa8c5e0316c8edd"
+    },
+    "gate1_2_preregistration": {
+      "commit": "c6e9506525d8e6088a6ecb6f417e375e040fd9aa",
+      "document_sha256": "28e2240b159cad032dbf3d80f28a6d309f80fa11e5ebd9c3edd7d3bc230c8a17",
+      "tag": "gate1.2-prereg-v1"
+    }
+  },
+  "exact_replication": {
+    "directional_support": true,
+    "hoeffding": {
+      "alpha": 0.05,
+      "certified_positive": false,
+      "half_width": 0.049590855703539646,
+      "lower": -0.0014859174319347065,
+      "method": "two-sided-hoeffding-bounded-minus1-plus1",
+      "upper": 0.09769579397514458
+    },
+    "paired_difference": {
+      "degrees_of_freedom": 2999,
+      "estimate": 0.04810493827160494,
+      "independent_units": 3000,
+      "lower": 0.04272786632773895,
+      "sample_variance": 0.02256140520395992,
+      "standard_error": 0.002742347243023752,
+      "t_critical": 1.960755319205,
+      "upper": 0.05348201021547093
+    },
+    "practical_magnitude": {
+      "threshold": 0.05,
+      "threshold_met": false
+    },
+    "rewired": {
+      "adoption_count": 39789,
+      "denominator": 162000,
+      "mean_incidence": 0.2456111111111111
+    },
+    "rewired_minus_ring_from_aggregates": 0.04810493827160494,
+    "ring": {
+      "adoption_count": 31996,
+      "denominator": 162000,
+      "mean_incidence": 0.19750617283950617
+    }
+  },
+  "execution": {
+    "analysis_run_count": 1,
+    "completed_independent_units": 14000,
+    "condition_runs": 30000,
+    "duplicate_units": 0,
+    "implementation_commit": "798985dc77dac6a327848ff4c29445417a616094",
+    "implementation_source_hash": "bbbcffc40390a357337b154e9d6ed578e41f451fc8c6105a0ea3c83418311bf2",
+    "invalid_units": 0,
+    "invocations": {
+      "disclosure": "The initial exact-replication process was stopped after 813 valid chunks to replace CPU-bound thread concurrency with process-level concurrency. The same frozen identities resumed all 813 valid chunks; no credited unit was recomputed and no temporary file remained.",
+      "failed_units": 0,
+      "interrupted_temporary_files": 0,
+      "invocation_count": 13,
+      "newly_computed_unique_units": 14000,
+      "operator_process_interruptions": 1,
+      "preexisting_valid_observations": 813,
+      "recomputed_units": 0,
+      "resumed_valid_observations": 813,
+      "skipped_units": 0,
+      "unfinished_units": 0
+    },
+    "missing_units": 0,
+    "ordered_suite_ensemble_hash": "sha256:7a2554574aa0083bc1007c6dd4c61d07aff86f38062d0ff83e0ee9985c604661",
+    "schema_version": "gate12-execution-accounting-v1",
+    "subcampaign_count": 12,
+    "subcampaigns": [
+      {
+        "cell_id": "alternate-topology-3",
+        "completion_manifest_hash": "sha256:25d748a8441f9325dc6b36c8b23925b228c8cc52e2b7a34c161544b5fab0f640",
+        "ordered_ensemble_hash": "sha256:a5552ba831a7d60c66ad5f70ab61b8a9c58eb115a15bae5b11a58b4dd4a78802",
+        "subcampaign_id": "gate12-alt-topology-1000-v1",
+        "unit_kind": "cluster",
+        "valid_unit_count": 1000
+      },
+      {
+        "cell_id": null,
+        "completion_manifest_hash": "sha256:06857bfebd4d4510d900bed05bef0602666556147017445cc21bd0db40cd6298",
+        "ordered_ensemble_hash": "sha256:3688ae31b4dcc1ec2a20dca6d7241fbf647ae46d10c811d746584f484672b1d1",
+        "subcampaign_id": "gate12-replication-3000-v1",
+        "unit_kind": "pair",
+        "valid_unit_count": 3000
+      },
+      {
+        "cell_id": "p-1-of-8",
+        "completion_manifest_hash": "sha256:59f814cb5a51c8c59ff151f8daa28267ea97dc009e2fbc17b45c42e31529378f",
+        "ordered_ensemble_hash": "sha256:96494dcaba6870b1fa4d1fb39fbaa2a7e037f6e0c71d71150325a1c989954a54",
+        "subcampaign_id": "gate12-standard-robustness-1000-v1:p-1-of-8",
+        "unit_kind": "pair",
+        "valid_unit_count": 1000
+      },
+      {
+        "cell_id": "p-3-of-8",
+        "completion_manifest_hash": "sha256:3990ff53155d22ba78f37a2f5510e53494b29c656bcb49eedb0a118375609b48",
+        "ordered_ensemble_hash": "sha256:aba84778ae7993f064028a2c80db14cb2359448a725fbd2f4f14ed9a3622452d",
+        "subcampaign_id": "gate12-standard-robustness-1000-v1:p-3-of-8",
+        "unit_kind": "pair",
+        "valid_unit_count": 1000
+      },
+      {
+        "cell_id": "rounds-12",
+        "completion_manifest_hash": "sha256:63e4af81a73d3eb851576b90433ecd755874ab786da6e195cd5c17cfa5f7079e",
+        "ordered_ensemble_hash": "sha256:8c8cd6ff913fba3c8c5b6895ef97ceac14271289612335f38e5bba6b357d2ce2",
+        "subcampaign_id": "gate12-standard-robustness-1000-v1:rounds-12",
+        "unit_kind": "pair",
+        "valid_unit_count": 1000
+      },
+      {
+        "cell_id": "rounds-4",
+        "completion_manifest_hash": "sha256:9288587337745adafe49025be766275cd338902501e86a5b8b9c5118faa1ecc1",
+        "ordered_ensemble_hash": "sha256:c441386c2e68592e69af30091791f4d9c922c204a21a3b1f790fcf2360d46692",
+        "subcampaign_id": "gate12-standard-robustness-1000-v1:rounds-4",
+        "unit_kind": "pair",
+        "valid_unit_count": 1000
+      },
+      {
+        "cell_id": "seed-placement-clustered",
+        "completion_manifest_hash": "sha256:7baecfe4e78fbde2758af3e6d4a0c240673a4735f3a2d87f14e950c637fd52a4",
+        "ordered_ensemble_hash": "sha256:bd1a92f18fdb4457e631fdcffd1b79d01ee931482b33c7b6aa0a442818177083",
+        "subcampaign_id": "gate12-standard-robustness-1000-v1:seed-placement-clustered",
+        "unit_kind": "pair",
+        "valid_unit_count": 1000
+      },
+      {
+        "cell_id": "seed-placement-dispersed",
+        "completion_manifest_hash": "sha256:23a821cab5a370097a8d1fb39b2a902176fb1fbb73ae1cd24e666b307ac92e21",
+        "ordered_ensemble_hash": "sha256:dfeba50d000c4313dfc3d33a6c3c242ec20ecf71a89d4520a43861506988e590",
+        "subcampaign_id": "gate12-standard-robustness-1000-v1:seed-placement-dispersed",
+        "unit_kind": "pair",
+        "valid_unit_count": 1000
+      },
+      {
+        "cell_id": "seeds-12",
+        "completion_manifest_hash": "sha256:42ce434f6cf0929cd36dd8aaece7f45dde48adbbe4772418844c15fdf21034dc",
+        "ordered_ensemble_hash": "sha256:545b3b395212e4fe84a7332ba512dafdc59efa0c5921b454da07361be654fc32",
+        "subcampaign_id": "gate12-standard-robustness-1000-v1:seeds-12",
+        "unit_kind": "pair",
+        "valid_unit_count": 1000
+      },
+      {
+        "cell_id": "seeds-3",
+        "completion_manifest_hash": "sha256:60ffefe0a8731215877d7623fe0fcb4962599baa49a4043ff8fec0a616c9a7f7",
+        "ordered_ensemble_hash": "sha256:32b9dd3d9e882c45cde871f3b7c5b8be580575d2968ab78fcd0bfcddc3c2d064",
+        "subcampaign_id": "gate12-standard-robustness-1000-v1:seeds-3",
+        "unit_kind": "pair",
+        "valid_unit_count": 1000
+      },
+      {
+        "cell_id": "swaps-360",
+        "completion_manifest_hash": "sha256:94f35441cde7bee3100c3417f1a5bdc57e722871390f6b4b66eb42a9d37df82b",
+        "ordered_ensemble_hash": "sha256:31d08535e5d1325762ed8bf777504b82440afdc233f22858d2715d439ed492e9",
+        "subcampaign_id": "gate12-standard-robustness-1000-v1:swaps-360",
+        "unit_kind": "pair",
+        "valid_unit_count": 1000
+      },
+      {
+        "cell_id": "swaps-840",
+        "completion_manifest_hash": "sha256:f3ccc6a0a1733f422707d7d7981e2f023472edf4e3fdd4cbe73d26538064e3cd",
+        "ordered_ensemble_hash": "sha256:06d881bb88e8440d0398693e20200e6174c3a7f5bdf11c48ce0f568fa908c7c6",
+        "subcampaign_id": "gate12-standard-robustness-1000-v1:swaps-840",
+        "unit_kind": "pair",
+        "valid_unit_count": 1000
+      }
+    ],
+    "suite_completion_hash": "sha256:c111cd3bad274cd83b54298545112d513e5c216d391204b0b6bd56f68ebd332f",
+    "suite_id": "gate12-suite-v1",
+    "suite_spec_hash": "sha256:f529f43d05228602ec4d13684b928d7f390fdbb7962f3805ff408af8fa32ee54"
+  },
+  "gate1_1_magnitude_comparison": {
+    "ci90": {
+      "lower": -0.006744697989863143,
+      "upper": 0.006028648607147093
+    },
+    "ci95": {
+      "lower": -0.00796893619645148,
+      "upper": 0.007252886813735429
+    },
+    "classification": "consistent within five percentage points",
+    "contrast_replication_minus_gate1_1": -0.00035802469135802484,
+    "equivalence_margin": 0.05,
+    "gate1_1_estimate": 0.048462962962962965,
+    "replication_estimate": 0.04810493827160494,
+    "standard_error": 0.0038816222659435874
+  },
+  "integrity": {
+    "analysis_run_count": 1,
+    "confirmatory_analysis_content_hash": "sha256:f1ab741de5b57e9ccaaab437299992538baa549d1bb2de4c59a5cd7c1220e7f0",
+    "confirmatory_analysis_file_sha256": "5095dfb4a6b3e692b94046a1128ed30c28da3de0b4eba8e7dd7e2a644d4f7c32",
+    "ordered_suite_ensemble_hash": "sha256:7a2554574aa0083bc1007c6dd4c61d07aff86f38062d0ff83e0ee9985c604661",
+    "raw_chunks_cryptographically_represented": 14000,
+    "raw_chunks_in_compact_package": 0,
+    "suite_completion_hash": "sha256:c111cd3bad274cd83b54298545112d513e5c216d391204b0b6bd56f68ebd332f"
+  },
+  "joint_classification": {
+    "classification": "replicated but specification-sensitive",
+    "components": {
+      "P11": true,
+      "Prep": true,
+      "Rcert": false,
+      "Rreverse": false,
+      "Rsign": false,
+      "S11": true,
+      "Srep": true
+    },
+    "strong_directional_reversal_present": false
+  },
+  "limitations": [
+    "This is a scripted independent-cascade benchmark, not LLM behavior.",
+    "The result does not establish persuasion, autonomous norm formation, emergent intelligence, or general real-agent social behavior.",
+    "The result is not presented as a novel network-science discovery.",
+    "The practical five-percentage-point threshold and Hoeffding positivity certification were not met in exact replication.",
+    "Strong family-wide robustness was not certified, and the dispersed-seed point estimate was negative but imprecise."
+  ],
+  "primary_endpoint": "final adoption incidence among initially unseeded agents at the frozen horizon",
+  "robustness_family": {
+    "all_point_estimates_positive": false,
+    "cells": [
+      {
+        "bonferroni_simultaneous_95": {
+          "family_size": 11,
+          "lower": -0.0005133728634774057,
+          "t_critical": 2.844038318881,
+          "upper": 0.011031891381995923
+        },
+        "cell_id": "p-1-of-8",
+        "estimate": 0.005259259259259259,
+        "sample_variance": 0.004119807049848202,
+        "standard_error": 0.0020297307826034963,
+        "unadjusted_95": {
+          "lower": 0.0012762343896164565,
+          "t_critical": 1.962341461134,
+          "upper": 0.00924228412890206
+        }
+      },
+      {
+        "bonferroni_simultaneous_95": {
+          "family_size": 11,
+          "lower": 0.1336918954047234,
+          "t_critical": 2.844038318881,
+          "upper": 0.17275254903972107
+        },
+        "cell_id": "p-3-of-8",
+        "estimate": 0.15322222222222223,
+        "sample_variance": 0.0471572134548815,
+        "standard_error": 0.0068671109977108645,
+        "unadjusted_95": {
+          "lower": 0.13974660559320493,
+          "t_critical": 1.962341461134,
+          "upper": 0.16669783885123954
+        }
+      },
+      {
+        "bonferroni_simultaneous_95": {
+          "family_size": 11,
+          "lower": 0.027022979668228968,
+          "t_critical": 2.844038318881,
+          "upper": 0.04939807296334998
+        },
+        "cell_id": "seeds-3",
+        "estimate": 0.03821052631578947,
+        "sample_variance": 0.015473865986639145,
+        "standard_error": 0.003933683513786937,
+        "unadjusted_95": {
+          "lower": 0.030491296061706086,
+          "t_critical": 1.962341461134,
+          "upper": 0.04592975656987286
+        }
+      },
+      {
+        "bonferroni_simultaneous_95": {
+          "family_size": 11,
+          "lower": 0.03191593911998551,
+          "t_critical": 2.844038318881,
+          "upper": 0.06154239421334781
+        },
+        "cell_id": "seeds-12",
+        "estimate": 0.04672916666666666,
+        "sample_variance": 0.02712866990254143,
+        "standard_error": 0.005208518974002248,
+        "unadjusted_95": {
+          "lower": 0.03650827393287893,
+          "t_critical": 1.962341461134,
+          "upper": 0.056950059400454396
+        }
+      },
+      {
+        "bonferroni_simultaneous_95": {
+          "family_size": 11,
+          "lower": 0.015490597207028329,
+          "t_critical": 2.844038318881,
+          "upper": 0.037694587978156856
+        },
+        "cell_id": "rounds-4",
+        "estimate": 0.02659259259259259,
+        "sample_variance": 0.015238113284752518,
+        "standard_error": 0.0039036026033335562,
+        "unadjusted_95": {
+          "lower": 0.018932391356280533,
+          "t_critical": 1.962341461134,
+          "upper": 0.03425279382890465
+        }
+      },
+      {
+        "bonferroni_simultaneous_95": {
+          "family_size": 11,
+          "lower": 0.030050476802000216,
+          "t_critical": 2.844038318881,
+          "upper": 0.05728285653133313
+        },
+        "cell_id": "rounds-12",
+        "estimate": 0.04366666666666667,
+        "sample_variance": 0.022921356198448106,
+        "standard_error": 0.004787625319346545,
+        "unadjusted_95": {
+          "lower": 0.03427171100213804,
+          "t_critical": 1.962341461134,
+          "upper": 0.0530616223311953
+        }
+      },
+      {
+        "bonferroni_simultaneous_95": {
+          "family_size": 11,
+          "lower": 0.03733384694037477,
+          "t_critical": 2.844038318881,
+          "upper": 0.06455504194851412
+        },
+        "cell_id": "swaps-360",
+        "estimate": 0.050944444444444445,
+        "sample_variance": 0.022902531818512612,
+        "standard_error": 0.004785658974322409,
+        "unadjusted_95": {
+          "lower": 0.04155334742028357,
+          "t_critical": 1.962341461134,
+          "upper": 0.06033554146860532
+        }
+      },
+      {
+        "bonferroni_simultaneous_95": {
+          "family_size": 11,
+          "lower": 0.03263687791116267,
+          "t_critical": 2.844038318881,
+          "upper": 0.05951127023698548
+        },
+        "cell_id": "swaps-840",
+        "estimate": 0.04607407407407407,
+        "sample_variance": 0.022322684824742436,
+        "standard_error": 0.004724688860098878,
+        "unadjusted_95": {
+          "lower": 0.03680262123294411,
+          "t_critical": 1.962341461134,
+          "upper": 0.05534552691520404
+        }
+      },
+      {
+        "bonferroni_simultaneous_95": {
+          "family_size": 11,
+          "lower": 0.18224161610089096,
+          "t_critical": 2.844038318881,
+          "upper": 0.20623986538059053
+        },
+        "cell_id": "seed-placement-clustered",
+        "estimate": 0.19424074074074074,
+        "sample_variance": 0.017800337717690257,
+        "standard_error": 0.004219044645140681,
+        "unadjusted_95": {
+          "lower": 0.1859615345072058,
+          "t_critical": 1.962341461134,
+          "upper": 0.2025199469742757
+        }
+      },
+      {
+        "bonferroni_simultaneous_95": {
+          "family_size": 11,
+          "lower": -0.018158161290935643,
+          "t_critical": 2.844038318881,
+          "upper": 0.01034334647612083
+        },
+        "cell_id": "seed-placement-dispersed",
+        "estimate": -0.003907407407407406,
+        "sample_variance": 0.025107576369236176,
+        "standard_error": 0.005010746089080565,
+        "unadjusted_95": {
+          "lower": -0.013740202209225238,
+          "t_critical": 1.962341461134,
+          "upper": 0.005925387394410425
+        }
+      },
+      {
+        "bonferroni_simultaneous_95": {
+          "family_size": 11,
+          "lower": 0.030536228093817164,
+          "t_critical": 2.844038318881,
+          "upper": 0.050352660795071724
+        },
+        "cell_id": "alternate-topology-3",
+        "estimate": 0.04044444444444444,
+        "sample_variance": 0.012137243782419822,
+        "standard_error": 0.003483854730384122,
+        "unadjusted_95": {
+          "lower": 0.03360793186244387,
+          "t_critical": 1.962341461134,
+          "upper": 0.04728095702644502
+        }
+      }
+    ],
+    "family_size": 11,
+    "independent_units_per_contrast": 1000,
+    "strong_directional_reversal": false,
+    "strong_robustness_certified": false
+  },
+  "runtime_metadata": {
+    "execution_language": "Python",
+    "initial_exact_worker_count": 8,
+    "package_built_at_utc": "2026-08-30T23:01:57Z",
+    "parallel_subcampaign_processes": 12,
+    "resumed_exact_worker_count": 1
+  },
+  "schema_version": "gate12-passport-v1",
+  "scientific_conclusion": "The fresh-seed exact replication supported the directional topology effect and was magnitude-consistent with Gate 1.1. The frozen joint classification is replicated but specification-sensitive because not all eleven robustness point estimates were positive; there was no strong directional reversal.",
+  "scientific_scope": "Preregistered replication and robustness of a scripted independent-cascade topology benchmark; not evidence about LLM or real-agent social behavior.",
+  "status": "VALID_COMPLETE_UNPUBLISHED_CANDIDATE"
+}

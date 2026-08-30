@@ -29,12 +29,14 @@ jobs:
         run: python scripts/safety_scan.py
       - name: Gate 1.1 compact result evidence
         run: |
-          if [ -d results/gate1_1 ]; then
+          if [ -d results/gate1_1 ] && [ ! -d results/gate1_2 ]; then
             python scripts/validate_gate11_result.py
           fi
-      - name: Gate 1.2 certified implementation
+      - name: Gate 1.2 implementation or result evidence
         run: |
-          if [ -f manifests/gate1_2_suite_v1.json ]; then
+          if [ -d results/gate1_2 ]; then
+            python scripts/validate_gate12_result.py
+          elif [ -f manifests/gate1_2_suite_v1.json ]; then
             python scripts/validate_gate12_implementation.py
           fi
       - name: Whitespace check

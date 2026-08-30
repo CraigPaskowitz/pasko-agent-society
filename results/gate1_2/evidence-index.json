@@ -1,0 +1,248 @@
+{
+  "analysis_content_hash": "sha256:f1ab741de5b57e9ccaaab437299992538baa549d1bb2de4c59a5cd7c1220e7f0",
+  "member_count": 47,
+  "package_members": [
+    {
+      "bytes": 7815,
+      "file": "GATE_1_2_RESULT_REPORT.md",
+      "sha256": "d7461836eddbb37bbc01025452fe3f124c0c59720131d34ee479ecaea4e4aed6"
+    },
+    {
+      "bytes": 15573,
+      "file": "campaign-specification.json",
+      "sha256": "89ff2c154a2fb093484c1e6a358de725455ff727ad65f5f88153081b6c60901d"
+    },
+    {
+      "bytes": 123860,
+      "file": "checkpoints/alternate-topology.json",
+      "sha256": "7ba0a463442a007586f3feb7306314a72888d90eb1f9602912f8c6df223937a8"
+    },
+    {
+      "bytes": 351841,
+      "file": "checkpoints/exact-replication.json",
+      "sha256": "a25d0019fb172339dc22b7f572233e3e778d15597f9ebcf57a2e875d5e63774f"
+    },
+    {
+      "bytes": 127864,
+      "file": "checkpoints/p-1-of-8.json",
+      "sha256": "fce5b8bc5d9d55a30a0a3ae21fe58c419b6d1925dd9755d7088d05b9401fba1f"
+    },
+    {
+      "bytes": 127864,
+      "file": "checkpoints/p-3-of-8.json",
+      "sha256": "fc01c5365b5d5c4ec7a438c52fdab289e871cbb1d516c6b11466ae742beaed15"
+    },
+    {
+      "bytes": 129866,
+      "file": "checkpoints/rounds-12.json",
+      "sha256": "6e65e47f25b366212620b786aa3c92b859eed31890fbed4f36f9fb698b5b02c2"
+    },
+    {
+      "bytes": 127864,
+      "file": "checkpoints/rounds-4.json",
+      "sha256": "a322ce001d9d9006f94aa43d576a65841dab0ceb7b469f608ba46f0291c075d2"
+    },
+    {
+      "bytes": 159896,
+      "file": "checkpoints/seed-placement-clustered.json",
+      "sha256": "56435529f9665c5a521097e795e6ee5773361d9e5694d1a04adcd611c98a1f1c"
+    },
+    {
+      "bytes": 159896,
+      "file": "checkpoints/seed-placement-dispersed.json",
+      "sha256": "66adfa8acbd36998d7d81947b6bbb3d30b64736972edb2af028050e1ed17894d"
+    },
+    {
+      "bytes": 127864,
+      "file": "checkpoints/seeds-12.json",
+      "sha256": "890d6e6a71e247db0c322fe4960a97b05b7ce851c1b1b1e1bf670e1882dcded0"
+    },
+    {
+      "bytes": 125862,
+      "file": "checkpoints/seeds-3.json",
+      "sha256": "c69be39d6acf93bbca26414a80e05a5b03ee15ee91b086cee39f022b55d9d282"
+    },
+    {
+      "bytes": 129866,
+      "file": "checkpoints/swaps-360.json",
+      "sha256": "5054fbabad80b502d9525d0e70463cd28b19b92618c88bebe6669acf78117396"
+    },
+    {
+      "bytes": 129866,
+      "file": "checkpoints/swaps-840.json",
+      "sha256": "996ead447959398dc7a7eec4f363bb1416ef3da79548c87caf36a8de838cb7ff"
+    },
+    {
+      "bytes": 144874,
+      "file": "completion-manifests/alternate-topology.json",
+      "sha256": "56fd58d26f3c05117535fbfec00a0097b4abb2c35713f8d2363633c27e88547b"
+    },
+    {
+      "bytes": 423852,
+      "file": "completion-manifests/exact-replication.json",
+      "sha256": "02586b5d3e7affb87afd622709183c825556307b95f046e35ba6802184539310"
+    },
+    {
+      "bytes": 146875,
+      "file": "completion-manifests/p-1-of-8.json",
+      "sha256": "8d02772308041355df73073ae419d8611e0b45650e4a7b2104d0c0365e40840b"
+    },
+    {
+      "bytes": 146875,
+      "file": "completion-manifests/p-3-of-8.json",
+      "sha256": "275b60647d9a5cbb3b291f4e94e866806a94747227ca718605900a79cf80c8e5"
+    },
+    {
+      "bytes": 147877,
+      "file": "completion-manifests/rounds-12.json",
+      "sha256": "16e9a6c00ddc00e9698475448ebf5e8fd7ffe16eacdae6f342f4f5b1e4c4083f"
+    },
+    {
+      "bytes": 146875,
+      "file": "completion-manifests/rounds-4.json",
+      "sha256": "ef23cc7561d6c724e4a2c3f92b2674445400ec82ae8678cba9440c921f848cd6"
+    },
+    {
+      "bytes": 162907,
+      "file": "completion-manifests/seed-placement-clustered.json",
+      "sha256": "feeabc81b155e2200c3cdedd3feb93a561cf74dc299465f00f25506218d08d25"
+    },
+    {
+      "bytes": 162907,
+      "file": "completion-manifests/seed-placement-dispersed.json",
+      "sha256": "30117cf7d3a03c6ecec88c59d574821c36ccc8e8459bda3fbdc4486e2a4c9fd3"
+    },
+    {
+      "bytes": 146875,
+      "file": "completion-manifests/seeds-12.json",
+      "sha256": "5db1ec24e6e98417b0032757df4a46ca5b9f0a8a7871615b0ec855f66cda576b"
+    },
+    {
+      "bytes": 145873,
+      "file": "completion-manifests/seeds-3.json",
+      "sha256": "bd39c0adf9ed5ced745d26ccad420f36c51a99d0de3daef1816518710bc6010e"
+    },
+    {
+      "bytes": 147877,
+      "file": "completion-manifests/swaps-360.json",
+      "sha256": "2c4d8b0fdbc240cf282db745fe22c7a6ce04105d0a9ad1b4ed768a20359bfa0b"
+    },
+    {
+      "bytes": 147877,
+      "file": "completion-manifests/swaps-840.json",
+      "sha256": "5d694c3b80f9aa34d39581f78f38a19ff71ff86b66a6b2d7aeb8839363effb6d"
+    },
+    {
+      "bytes": 6098,
+      "file": "execution-accounting.json",
+      "sha256": "8ccc29404a470042389f42659a7dd32a800d74d4a73cb1ab139775d996ab1fa8"
+    },
+    {
+      "bytes": 549,
+      "file": "execution-authorization.json",
+      "sha256": "d21ea77441d4fe646a4034c036f5849d8429353b3d8fec15579d75e291494794"
+    },
+    {
+      "bytes": 8447,
+      "file": "gate1_2-confirmatory-analysis.json",
+      "sha256": "5095dfb4a6b3e692b94046a1128ed30c28da3de0b4eba8e7dd7e2a644d4f7c32"
+    },
+    {
+      "bytes": 17645,
+      "file": "gate1_2_passport.json",
+      "sha256": "fab2e5c3700f4cb9a65621038a538a85007c9ddeaaf00f56c9d40c1aca214ce9"
+    },
+    {
+      "bytes": 24449,
+      "file": "invocation-journals/gate12-alt-topology-run-01.json",
+      "sha256": "6749affd12f14c79191137042cae8fcfdd7bb2f0d85c831549587f07eb7e75b1"
+    },
+    {
+      "bytes": 42478,
+      "file": "invocation-journals/gate12-clustered-run-01.json",
+      "sha256": "c0a0419ddd4da1afd0c06191d69f3f97f50999c40f32b7f25e7144ca7f0969ac"
+    },
+    {
+      "bytes": 42478,
+      "file": "invocation-journals/gate12-dispersed-run-01.json",
+      "sha256": "3a5da9adf5f29f998d9c3670efbcce19a399b02f66cf52bfe017bd0c277ac477"
+    },
+    {
+      "bytes": 80521,
+      "file": "invocation-journals/gate12-exact-resume-02.json",
+      "sha256": "50770653fd9baf946b348ccafcfd3c3e1a91abd22959c30ba25799b5034dc14e"
+    },
+    {
+      "bytes": 17514,
+      "file": "invocation-journals/gate12-exact-run-01.json",
+      "sha256": "50a3c9b049de9890d94f9dbcc5150aeae5fabb2c70c103c39b83f1fb5fd27656"
+    },
+    {
+      "bytes": 26458,
+      "file": "invocation-journals/gate12-p1of8-run-01.json",
+      "sha256": "a9c8ecfb8555baba56478804e253d4723ba387d4f74efbf451ba9cffd0380eb5"
+    },
+    {
+      "bytes": 26458,
+      "file": "invocation-journals/gate12-p3of8-run-01.json",
+      "sha256": "c86d891d7e377677e75ed12317fb3a8b7164c48de96b3139b3301b7d8424820d"
+    },
+    {
+      "bytes": 27462,
+      "file": "invocation-journals/gate12-rounds12-run-01.json",
+      "sha256": "dab65bdd2c360f15e9e1c85b7eb316b409996729b59e3f71264d61cfaa452e45"
+    },
+    {
+      "bytes": 26460,
+      "file": "invocation-journals/gate12-rounds4-run-01.json",
+      "sha256": "dfcc3286139a6232aebec2671d5bbc50f39f5ce4c3aede9699fc49d9b8f8cbdb"
+    },
+    {
+      "bytes": 26460,
+      "file": "invocation-journals/gate12-seeds12-run-01.json",
+      "sha256": "d9bec6c756ef3257b8cbbc996b0f8815a4a925e5e5d1f3ae55d2fc04271971db"
+    },
+    {
+      "bytes": 25458,
+      "file": "invocation-journals/gate12-seeds3-run-01.json",
+      "sha256": "da6f89657a397e5dfef33052475849fc0bcc4f38af57302833cd43eb044fb9fb"
+    },
+    {
+      "bytes": 27462,
+      "file": "invocation-journals/gate12-swaps360-run-01.json",
+      "sha256": "6430d9c06dce73f4de579df2d5d93fbf4efb19f143067cb3fc6513eb2bcf90c0"
+    },
+    {
+      "bytes": 27462,
+      "file": "invocation-journals/gate12-swaps840-run-01.json",
+      "sha256": "303892651ae935953297c050f84184ac391ed34e55610c02e8dcfa1dcd91a62b"
+    },
+    {
+      "bytes": 3994,
+      "file": "pre-execution-receipt.json",
+      "sha256": "c50e7d13108059d8ce95e2f9fa0240c3985687673cd928668ca9b1949e42ddf1"
+    },
+    {
+      "bytes": 4974,
+      "file": "reproducibility-evidence.json",
+      "sha256": "ec643c9d634cf471057e8c8c3983ad675dfae9a356155f27e90a86e4e43aaf43"
+    },
+    {
+      "bytes": 5439,
+      "file": "suite-completion-manifest.json",
+      "sha256": "2e7a5fd78fed7b5715516737f53c54a70f1e62c82659522b5cba4b187f36c7b3"
+    },
+    {
+      "bytes": 3062,
+      "file": "validation-report.json",
+      "sha256": "b5349f8cc058da1332e17b19bb9bc91de04b59d15794917de81fe648d6ab1397"
+    }
+  ],
+  "package_status": "UNPUBLISHED_CANDIDATE",
+  "raw_chunks_included": 0,
+  "raw_chunks_represented_by_manifests": 14000,
+  "schema_version": "gate12-evidence-index-v1",
+  "suite_completion_content_hash": "sha256:c111cd3bad274cd83b54298545112d513e5c216d391204b0b6bd56f68ebd332f",
+  "suite_id": "gate12-suite-v1",
+  "total_member_bytes": 4388669
+}

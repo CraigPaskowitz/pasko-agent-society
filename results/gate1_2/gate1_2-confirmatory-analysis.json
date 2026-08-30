@@ -1,0 +1,260 @@
+{
+  "content_hash": "sha256:f1ab741de5b57e9ccaaab437299992538baa549d1bb2de4c59a5cd7c1220e7f0",
+  "cross_gate_magnitude": {
+    "ci90": {
+      "lower": -0.006744697989863143,
+      "upper": 0.006028648607147093
+    },
+    "ci95": {
+      "lower": -0.00796893619645148,
+      "upper": 0.007252886813735429
+    },
+    "classification": "consistent within five percentage points",
+    "contrast_replication_minus_gate1_1": -0.00035802469135802484,
+    "equivalence_margin": 0.05,
+    "gate1_1_estimate": 0.048462962962962965,
+    "replication_estimate": 0.04810493827160494,
+    "standard_error": 0.0038816222659435874
+  },
+  "exact_replication": {
+    "directional_support": true,
+    "hoeffding": {
+      "alpha": 0.05,
+      "certified_positive": false,
+      "half_width": 0.049590855703539646,
+      "lower": -0.0014859174319347065,
+      "method": "two-sided-hoeffding-bounded-minus1-plus1",
+      "upper": 0.09769579397514458
+    },
+    "paired_difference": {
+      "degrees_of_freedom": 2999,
+      "estimate": 0.04810493827160494,
+      "independent_units": 3000,
+      "lower": 0.04272786632773895,
+      "sample_variance": 0.02256140520395992,
+      "standard_error": 0.002742347243023752,
+      "t_critical": 1.960755319205,
+      "upper": 0.05348201021547093
+    },
+    "practical_magnitude": {
+      "threshold": 0.05,
+      "threshold_met": false
+    }
+  },
+  "implementation_commit": "798985dc77dac6a327848ff4c29445417a616094",
+  "implementation_source_hash": "bbbcffc40390a357337b154e9d6ed578e41f451fc8c6105a0ea3c83418311bf2",
+  "joint_classification": {
+    "classification": "replicated but specification-sensitive",
+    "components": {
+      "P11": true,
+      "Prep": true,
+      "Rcert": false,
+      "Rreverse": false,
+      "Rsign": false,
+      "S11": true,
+      "Srep": true
+    },
+    "strong_directional_reversal_present": false
+  },
+  "robustness_family": {
+    "all_point_estimates_positive": false,
+    "cells": [
+      {
+        "bonferroni_simultaneous_95": {
+          "family_size": 11,
+          "lower": -0.0005133728634774057,
+          "t_critical": 2.844038318881,
+          "upper": 0.011031891381995923
+        },
+        "cell_id": "p-1-of-8",
+        "estimate": 0.005259259259259259,
+        "sample_variance": 0.004119807049848202,
+        "standard_error": 0.0020297307826034963,
+        "unadjusted_95": {
+          "lower": 0.0012762343896164565,
+          "t_critical": 1.962341461134,
+          "upper": 0.00924228412890206
+        }
+      },
+      {
+        "bonferroni_simultaneous_95": {
+          "family_size": 11,
+          "lower": 0.1336918954047234,
+          "t_critical": 2.844038318881,
+          "upper": 0.17275254903972107
+        },
+        "cell_id": "p-3-of-8",
+        "estimate": 0.15322222222222223,
+        "sample_variance": 0.0471572134548815,
+        "standard_error": 0.0068671109977108645,
+        "unadjusted_95": {
+          "lower": 0.13974660559320493,
+          "t_critical": 1.962341461134,
+          "upper": 0.16669783885123954
+        }
+      },
+      {
+        "bonferroni_simultaneous_95": {
+          "family_size": 11,
+          "lower": 0.027022979668228968,
+          "t_critical": 2.844038318881,
+          "upper": 0.04939807296334998
+        },
+        "cell_id": "seeds-3",
+        "estimate": 0.03821052631578947,
+        "sample_variance": 0.015473865986639145,
+        "standard_error": 0.003933683513786937,
+        "unadjusted_95": {
+          "lower": 0.030491296061706086,
+          "t_critical": 1.962341461134,
+          "upper": 0.04592975656987286
+        }
+      },
+      {
+        "bonferroni_simultaneous_95": {
+          "family_size": 11,
+          "lower": 0.03191593911998551,
+          "t_critical": 2.844038318881,
+          "upper": 0.06154239421334781
+        },
+        "cell_id": "seeds-12",
+        "estimate": 0.04672916666666666,
+        "sample_variance": 0.02712866990254143,
+        "standard_error": 0.005208518974002248,
+        "unadjusted_95": {
+          "lower": 0.03650827393287893,
+          "t_critical": 1.962341461134,
+          "upper": 0.056950059400454396
+        }
+      },
+      {
+        "bonferroni_simultaneous_95": {
+          "family_size": 11,
+          "lower": 0.015490597207028329,
+          "t_critical": 2.844038318881,
+          "upper": 0.037694587978156856
+        },
+        "cell_id": "rounds-4",
+        "estimate": 0.02659259259259259,
+        "sample_variance": 0.015238113284752518,
+        "standard_error": 0.0039036026033335562,
+        "unadjusted_95": {
+          "lower": 0.018932391356280533,
+          "t_critical": 1.962341461134,
+          "upper": 0.03425279382890465
+        }
+      },
+      {
+        "bonferroni_simultaneous_95": {
+          "family_size": 11,
+          "lower": 0.030050476802000216,
+          "t_critical": 2.844038318881,
+          "upper": 0.05728285653133313
+        },
+        "cell_id": "rounds-12",
+        "estimate": 0.04366666666666667,
+        "sample_variance": 0.022921356198448106,
+        "standard_error": 0.004787625319346545,
+        "unadjusted_95": {
+          "lower": 0.03427171100213804,
+          "t_critical": 1.962341461134,
+          "upper": 0.0530616223311953
+        }
+      },
+      {
+        "bonferroni_simultaneous_95": {
+          "family_size": 11,
+          "lower": 0.03733384694037477,
+          "t_critical": 2.844038318881,
+          "upper": 0.06455504194851412
+        },
+        "cell_id": "swaps-360",
+        "estimate": 0.050944444444444445,
+        "sample_variance": 0.022902531818512612,
+        "standard_error": 0.004785658974322409,
+        "unadjusted_95": {
+          "lower": 0.04155334742028357,
+          "t_critical": 1.962341461134,
+          "upper": 0.06033554146860532
+        }
+      },
+      {
+        "bonferroni_simultaneous_95": {
+          "family_size": 11,
+          "lower": 0.03263687791116267,
+          "t_critical": 2.844038318881,
+          "upper": 0.05951127023698548
+        },
+        "cell_id": "swaps-840",
+        "estimate": 0.04607407407407407,
+        "sample_variance": 0.022322684824742436,
+        "standard_error": 0.004724688860098878,
+        "unadjusted_95": {
+          "lower": 0.03680262123294411,
+          "t_critical": 1.962341461134,
+          "upper": 0.05534552691520404
+        }
+      },
+      {
+        "bonferroni_simultaneous_95": {
+          "family_size": 11,
+          "lower": 0.18224161610089096,
+          "t_critical": 2.844038318881,
+          "upper": 0.20623986538059053
+        },
+        "cell_id": "seed-placement-clustered",
+        "estimate": 0.19424074074074074,
+        "sample_variance": 0.017800337717690257,
+        "standard_error": 0.004219044645140681,
+        "unadjusted_95": {
+          "lower": 0.1859615345072058,
+          "t_critical": 1.962341461134,
+          "upper": 0.2025199469742757
+        }
+      },
+      {
+        "bonferroni_simultaneous_95": {
+          "family_size": 11,
+          "lower": -0.018158161290935643,
+          "t_critical": 2.844038318881,
+          "upper": 0.01034334647612083
+        },
+        "cell_id": "seed-placement-dispersed",
+        "estimate": -0.003907407407407406,
+        "sample_variance": 0.025107576369236176,
+        "standard_error": 0.005010746089080565,
+        "unadjusted_95": {
+          "lower": -0.013740202209225238,
+          "t_critical": 1.962341461134,
+          "upper": 0.005925387394410425
+        }
+      },
+      {
+        "bonferroni_simultaneous_95": {
+          "family_size": 11,
+          "lower": 0.030536228093817164,
+          "t_critical": 2.844038318881,
+          "upper": 0.050352660795071724
+        },
+        "cell_id": "alternate-topology-3",
+        "estimate": 0.04044444444444444,
+        "sample_variance": 0.012137243782419822,
+        "standard_error": 0.003483854730384122,
+        "unadjusted_95": {
+          "lower": 0.03360793186244387,
+          "t_critical": 1.962341461134,
+          "upper": 0.04728095702644502
+        }
+      }
+    ],
+    "family_size": 11,
+    "independent_units_per_contrast": 1000,
+    "strong_directional_reversal": false,
+    "strong_robustness_certified": false
+  },
+  "schema_version": "gate12-confirmatory-analysis-v1",
+  "suite_completion_hash": "sha256:c111cd3bad274cd83b54298545112d513e5c216d391204b0b6bd56f68ebd332f",
+  "suite_id": "gate12-suite-v1",
+  "suite_spec_hash": "sha256:f529f43d05228602ec4d13684b928d7f390fdbb7962f3805ff408af8fa32ee54",
+  "validity_status": "VALID_COMPLETE"
+}
