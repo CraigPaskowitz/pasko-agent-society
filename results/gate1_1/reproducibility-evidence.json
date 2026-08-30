@@ -1,0 +1,41 @@
+{
+  "analysis_rerun": false,
+  "analysis_rerun_reason": "Preserve the preregistered exactly-once canonical primary analysis; identical verified scientific chunks and code already determine the same result.",
+  "canonical_execution": {
+    "checkpoint_content_hash": "sha256:9738b04bac0b3fa89af95e4f8d6e4515b611772d390cc8d6183626ee40cc5b9e",
+    "checkpoint_file_sha256": "2d92c22c74517c3f81ebdd512fdf09d2579fd40634d587c2080a794cb23b6464",
+    "completion_manifest_content_hash": "sha256:161e575ca0e56867d4f98ae4159a4214055e93d20062209dcd40639a8502dd86",
+    "completion_manifest_file_sha256": "a166df2912710cf77a54588219fe164e93dc16127d9fca8827b2f9d4cb1e94c6",
+    "invalid_pairs": 0,
+    "ordered_ensemble_hash": "sha256:f511edb2eb742f8220d94580757320d53546bc9f323cabd0ba0131fb20b64fbd",
+    "valid_pairs": 3000,
+    "worker_count": 8
+  },
+  "clean_reconstruction": {
+    "checkpoint_content_hash": "sha256:9738b04bac0b3fa89af95e4f8d6e4515b611772d390cc8d6183626ee40cc5b9e",
+    "checkpoint_file_sha256": "2d92c22c74517c3f81ebdd512fdf09d2579fd40634d587c2080a794cb23b6464",
+    "commit": "4c8bb4d3f88a38469a6edcb770b1b0a037a73ae7",
+    "completion_manifest_content_hash": "sha256:161e575ca0e56867d4f98ae4159a4214055e93d20062209dcd40639a8502dd86",
+    "completion_manifest_file_sha256": "a166df2912710cf77a54588219fe164e93dc16127d9fca8827b2f9d4cb1e94c6",
+    "condition_runs_replay_verified": 6000,
+    "failed_pairs": 0,
+    "interrupted_pairs": 0,
+    "invalid_pairs": 0,
+    "newly_executed_pairs": 3000,
+    "ordered_ensemble_hash": "sha256:f511edb2eb742f8220d94580757320d53546bc9f323cabd0ba0131fb20b64fbd",
+    "recomputed_pairs": 0,
+    "resumed_pairs": 0,
+    "valid_pairs": 3000,
+    "worker_count": 1
+  },
+  "comparisons": {
+    "checkpoint_bytes_identical": true,
+    "completion_manifest_bytes_identical": true,
+    "ordered_pair_hashes_matching": 3000,
+    "ordered_pair_hashes_total": 3000,
+    "serial_parallel_equivalence": true
+  },
+  "schema_version": "gate11-reproducibility-evidence-v1",
+  "status": "PASS",
+  "validated_at_utc": "2026-08-30T18:11:41Z"
+}

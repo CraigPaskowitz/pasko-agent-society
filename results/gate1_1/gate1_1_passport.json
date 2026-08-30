@@ -1,0 +1,170 @@
+{
+  "analysis": {
+    "analysis_plan_id": "gate11-paired-mean-v1",
+    "analysis_run_count": 1,
+    "claim_scope": "SCRIPTED_TOPOLOGY_PROPAGATION_ONLY",
+    "content_hash": "sha256:a910f13451e642ca57e81a8b2e1bfa04b9705aabbabe5d63cfde0e7e220a4ca8",
+    "file_sha256": "7e0731418f74accedd787895dd99e5b0b2243388c5470b18ec45ed361e390248",
+    "primary_endpoint": "final_adoption_incidence_among_54_initially_unseeded_after_round_8"
+  },
+  "campaign": {
+    "campaign_id": "gate11-primary-3000-v1",
+    "campaign_spec_canonical_hash": "sha256:76ceaf1e182b5b6ecbe8214a694b4000d47d495165ab025f15112901e71600f2",
+    "campaign_spec_file_sha256": "2ae4e65f16f39ce73a1487fbdbddd4b15651237a8a3d0a21c8ba2ce94bb4a81b",
+    "condition_runs_expected": 6000,
+    "condition_runs_valid": 6000,
+    "matched_pairs_attempted": 3000,
+    "matched_pairs_invalid": 0,
+    "matched_pairs_missing": 0,
+    "matched_pairs_valid": 3000,
+    "protocol_identity": "gate11-v1",
+    "root_seed": 20260830
+  },
+  "completion": {
+    "checkpoint_content_hash": "sha256:9738b04bac0b3fa89af95e4f8d6e4515b611772d390cc8d6183626ee40cc5b9e",
+    "checkpoint_file_sha256": "2d92c22c74517c3f81ebdd512fdf09d2579fd40634d587c2080a794cb23b6464",
+    "completion_manifest_content_hash": "sha256:161e575ca0e56867d4f98ae4159a4214055e93d20062209dcd40639a8502dd86",
+    "completion_manifest_file_sha256": "a166df2912710cf77a54588219fe164e93dc16127d9fca8827b2f9d4cb1e94c6",
+    "duplicate_pair_count": 0,
+    "integrity_incident_count": 0,
+    "ordered_ensemble_hash": "sha256:f511edb2eb742f8220d94580757320d53546bc9f323cabd0ba0131fb20b64fbd",
+    "partial_credited_chunk_count": 0,
+    "replay_verified_condition_runs": 6000,
+    "temporary_file_count_at_completion": 0
+  },
+  "execution": {
+    "authorization_file_sha256": "216e323471549a8bf14dc1c63252262e6101fc424565a976165fb63c9773598a",
+    "execution_branch": "gate-1.1-execution",
+    "execution_head": "4c8bb4d3f88a38469a6edcb770b1b0a037a73ae7",
+    "failed_pairs": 0,
+    "interrupted_pairs": 0,
+    "invocation_count": 1,
+    "invocation_id": "gate11-primary-run-20260830-a",
+    "newly_executed_pairs": 3000,
+    "preexisting_valid_pairs": 0,
+    "recomputed_pairs": 0,
+    "resumed_pairs": 0,
+    "retry_count": 0,
+    "worker_count": 8
+  },
+  "frozen_authorities": {
+    "gate1_1_implementation": {
+      "certification_commit": "4c8bb4d3f88a38469a6edcb770b1b0a037a73ae7",
+      "scientific_code_commit": "d31c78011abfc164fd3d20125bbe995e4023ee4a",
+      "source_bundle_sha256": "c8b8dd93b72711eec699cc1fc8981f20beef2c3daed3f3394263c8175dc35b09",
+      "tag": "gate1.1-impl-v1",
+      "tag_object": "0d065d9f0486b08bfbc9db42fefaf52a962c948b"
+    },
+    "gate1_1_preregistration": {
+      "commit": "cc1ab868a7401099751030580649e49258654fe2",
+      "document_sha256": "e6b7d28870c773c4ad7897349b74acfb99775a83905eaf66dcad2602a639c706",
+      "tag": "gate1.1-prereg-v1",
+      "tag_object": "ea551b44ca83f44ffa134d92cd2694dc1b53424c"
+    },
+    "gate1_2_preregistration": {
+      "commit": "c6e9506525d8e6088a6ecb6f417e375e040fd9aa",
+      "document_sha256": "28e2240b159cad032dbf3d80f28a6d309f80fa11e5ebd9c3edd7d3bc230c8a17",
+      "execution_count": 0,
+      "tag": "gate1.2-prereg-v1",
+      "tag_object": "08d0a5db354d166d5313a815dc87a8917fd1ecd4"
+    },
+    "gate1_baseline_commit": "f4436dc0985620512b647d825e712c72accb3e7c"
+  },
+  "limitations": [
+    "The agents use a fixed scripted independent-cascade mechanism rather than model-mediated reasoning.",
+    "The result does not establish LLM behavior, persuasion, autonomous norm formation, emergent intelligence, or general social behavior in real agents.",
+    "The benchmark is deliberately synthetic and is not presented as a novel network-science discovery.",
+    "The directional primary interval and the separate practical and Hoeffding criteria answer different preregistered questions.",
+    "Gate 1.2 replication and robustness have not been executed."
+  ],
+  "model_configuration": null,
+  "pre_execution": {
+    "checkpoint": null,
+    "completed_pairs": 0,
+    "invalid_pairs": 0,
+    "pending_pairs": 3000,
+    "primary_outcome_generating_runs": 0,
+    "receipt_file_sha256": "10fd9ef9ee421bcf248800feecb9d9e1f679b5826f9e6efdb8d5af515b1a9e82",
+    "receipt_recorded_at_utc": "2026-08-30T15:34:18Z"
+  },
+  "publication_status": "LOCAL_RESULT_CANDIDATE_UNPUBLISHED",
+  "result": {
+    "conclusion": "Under the frozen scripted independent-cascade mechanism, connected degree-preserving rewiring increased final adoption incidence among initially unseeded agents relative to the degree-4 ring. The preregistered directional hypothesis is supported, while the estimate did not meet the separate five-percentage-point practical threshold and the conservative Hoeffding interval did not clear zero.",
+    "directional_statistical_evidence": true,
+    "distribution_free_hoeffding": {
+      "certified_positive": false,
+      "half_width": 0.049590855703539646,
+      "lower": -0.0011278927405766817,
+      "upper": 0.09805381866650262
+    },
+    "h1_decision": "SUPPORT_H1",
+    "paired_difference": {
+      "estimate": 0.048462962962962965,
+      "sample_variance": 0.022639569042447162,
+      "standard_error": 0.002747093557589376
+    },
+    "practical_magnitude": {
+      "threshold": 0.05,
+      "threshold_met": false
+    },
+    "primary_95_percent_interval": {
+      "lower": 0.04307658465756581,
+      "t_critical": 1.960755319205,
+      "upper": 0.05384934126836012
+    },
+    "rewired": {
+      "adoption_count": 39420,
+      "denominator": 162000,
+      "mean_incidence": 0.24333333333333335
+    },
+    "ring": {
+      "adoption_count": 31569,
+      "denominator": 162000,
+      "mean_incidence": 0.19487037037037036
+    }
+  },
+  "reproduction": {
+    "analysis_rerun": false,
+    "analysis_rerun_reason": "The canonical preregistered analysis was required to run exactly once; identical verified chunks and implementation make a second result computation unnecessary.",
+    "canonical_parallel_worker_count": 8,
+    "clean_clone_commit": "4c8bb4d3f88a38469a6edcb770b1b0a037a73ae7",
+    "clean_completion_manifest_content_hash": "sha256:161e575ca0e56867d4f98ae4159a4214055e93d20062209dcd40639a8502dd86",
+    "clean_completion_manifest_file_sha256": "a166df2912710cf77a54588219fe164e93dc16127d9fca8827b2f9d4cb1e94c6",
+    "clean_condition_runs_replay_verified": 6000,
+    "clean_invalid_pairs": 0,
+    "clean_matched_pairs": 3000,
+    "clean_serial_worker_count": 1,
+    "clean_checkpoint_content_hash": "sha256:9738b04bac0b3fa89af95e4f8d6e4515b611772d390cc8d6183626ee40cc5b9e",
+    "clean_checkpoint_file_sha256": "2d92c22c74517c3f81ebdd512fdf09d2579fd40634d587c2080a794cb23b6464",
+    "ordered_pair_hashes_matching": 3000,
+    "serial_parallel_equivalence": true,
+    "status": "PASS"
+  },
+  "runtime_metadata": {
+    "analysis_artifact_written_at_utc": "2026-08-30T16:46:18Z",
+    "architecture": "arm64",
+    "operating_system": "macOS 26.6.2",
+    "python": "3.14.6",
+    "runtime_timestamps_are_not_part_of_scientific_hashes": true
+  },
+  "schema_version": "gate11-passport-v1",
+  "scientific_status": "PRIMARY_ANALYSIS_COMPLETE_PENDING_PUBLICATION_REVIEW",
+  "validation": {
+    "candidate_artifact_credential_scan": "PASS",
+    "candidate_artifact_private_path_scan": "PASS",
+    "ci": "NOT_RUN_NO_PUSH_AUTHORIZED",
+    "compile": "PASS",
+    "frozen_authority_hashes": "PASS",
+    "gate1_2_execution_count": 0,
+    "gate1_core_source_diff_count": 0,
+    "git_diff_check": "PASS",
+    "implementation_source_identity": "PASS",
+    "llm_dependency_present": false,
+    "repository_safety_privacy_scan": "PASS",
+    "tests": {
+      "artifact_free_exact_commit_clean_clone": "89_OF_89_PASS",
+      "boundary_note": "Two implementation-certification tests intentionally require the production artifact directory to be absent. A pre-campaign clean-clone invocation after placing only the authorization file produced those two expected failures; no pair had run. Removing that file and directory restored the certified pre-data state and all 89 tests passed before the clean campaign."
+    },
+    "validated_at_utc": "2026-08-30T18:11:41Z"
+  }
+}

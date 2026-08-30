@@ -1,0 +1,56 @@
+{
+  "campaign_integrity": {
+    "condition_runs_valid_and_replay_verified": 6000,
+    "duplicate_pairs": 0,
+    "invalid_pairs": 0,
+    "matched_pairs_valid": 3000,
+    "missing_pairs": 0,
+    "partial_credited_chunks": 0,
+    "status": "PASS",
+    "temporary_files_at_completion": 0
+  },
+  "clean_clone": {
+    "commit": "4c8bb4d3f88a38469a6edcb770b1b0a037a73ae7",
+    "compile": "PASS",
+    "full_serial_reconstruction": "PASS",
+    "git_diff_check": "PASS",
+    "safety_privacy_scan": "PASS",
+    "tests": "89_OF_89_PASS"
+  },
+  "frozen_integrity": {
+    "gate1_1_implementation": "PASS",
+    "gate1_1_preregistration": "PASS",
+    "gate1_2_preregistration": "PASS",
+    "gate1_core_source_diff_count": 0,
+    "status": "PASS"
+  },
+  "gate1_2": {
+    "artifact_count": 0,
+    "execution_count": 0,
+    "status": "NOT_EXECUTED"
+  },
+  "publication": {
+    "ci": "NOT_RUN_NO_PUSH_AUTHORIZED",
+    "commit_created": false,
+    "push_performed": false,
+    "release_created": false,
+    "result_tag_created": false,
+    "status": "LOCAL_ONLY"
+  },
+  "safety_privacy": {
+    "candidate_artifact_credentials": "PASS",
+    "candidate_artifact_private_paths": "PASS",
+    "external_io_dependency": false,
+    "llm_dependency": false,
+    "offensive_security_dependency": false,
+    "repository_scan": "PASS"
+  },
+  "schema_version": "gate11-result-validation-v1",
+  "test_boundary_disclosure": {
+    "initial_clean_clone_invocation": "89_RUN_2_EXPECTED_FAILURES",
+    "reason": "The authorization file made the production artifact directory exist, while two implementation-certification tests intentionally assert the pre-data directory is absent.",
+    "scientific_artifacts_present_at_initial_invocation": false,
+    "subsequent_artifact_free_exact_commit_invocation": "89_OF_89_PASS"
+  },
+  "validated_at_utc": "2026-08-30T18:11:41Z"
+}

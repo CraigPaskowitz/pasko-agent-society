@@ -16,17 +16,19 @@ Gate 1 established laboratory validity. Its scripted T2–T5 null was not eviden
 
 ## Gate 1.1 — Preregistered Scripted Topology/Propagation Benchmark
 
-**Status: approved for an immutable public preregistration commit; no outcome-generating run has occurred.**
+**Status: complete; primary result frozen in `results/gate1_1/`.**
 
 Test whether connected degree-preserving rewiring of a degree-4 ring changes final adoption incidence among initially unseeded agents under one fixed scripted independent-cascade mechanism.
 
 The purpose is to show that the validated laboratory can reproduce and measure a genuine population-level phenomenon. Ring-versus-rewired contagion is established network science; novelty is not the claim.
 
-The immutable protocol is `preregistrations/GATE_1_1_PREREGISTRATION.md` after its public preregistration commit.
+The immutable protocol is `preregistrations/GATE_1_1_PREREGISTRATION.md`. The directional hypothesis was supported: rewiring increased final adoption incidence by 4.846 percentage points (paired 95% CI: 4.308 to 5.385 points). The point estimate did not meet the separate five-point practical criterion, and the conservative Hoeffding interval did not certify positivity.
 
 ## Gate 1.2 — Preregistered Replication & Robustness
 
-Preregister exact-design replication and outcome-independent specification checks before Gate 1.1 is unblinded, preferably before its primary execution.
+**Status: preregistered before Gate 1.1 outcome generation; implementation and execution have not begun.**
+
+The exact-design replication and outcome-independent specification checks were frozen before Gate 1.1 was unblinded.
 
 The separately versioned protocol will freeze exact panels across transmission probability, seed fraction, propagation horizon, rewiring intensity, seed dispersion, and alternate connected degree-preserving topology realizations. Gate 1.2 cannot rescue, redefine, or strengthen Gate 1.1 after results are observed.
 

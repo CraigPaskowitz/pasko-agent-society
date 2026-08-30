@@ -1,0 +1,56 @@
+{
+  "campaign_id": "gate11-primary-3000-v1",
+  "canonical_scientific_hashes": {
+    "analysis_content_hash": "sha256:a910f13451e642ca57e81a8b2e1bfa04b9705aabbabe5d63cfde0e7e220a4ca8",
+    "campaign_spec_hash": "sha256:76ceaf1e182b5b6ecbe8214a694b4000d47d495165ab025f15112901e71600f2",
+    "checkpoint_content_hash": "sha256:9738b04bac0b3fa89af95e4f8d6e4515b611772d390cc8d6183626ee40cc5b9e",
+    "completion_manifest_content_hash": "sha256:161e575ca0e56867d4f98ae4159a4214055e93d20062209dcd40639a8502dd86",
+    "ordered_ensemble_hash": "sha256:f511edb2eb742f8220d94580757320d53546bc9f323cabd0ba0131fb20b64fbd"
+  },
+  "package_members": [
+    {
+      "file": "GATE_1_1_RESULT_REPORT.md",
+      "sha256": "7df93c11bcb2e5015112951122cb6e06526d6d976d76bcf04fbd99cbbe00e419"
+    },
+    {
+      "file": "checkpoint.json",
+      "sha256": "2d92c22c74517c3f81ebdd512fdf09d2579fd40634d587c2080a794cb23b6464"
+    },
+    {
+      "file": "completion-manifest.json",
+      "sha256": "a166df2912710cf77a54588219fe164e93dc16127d9fca8827b2f9d4cb1e94c6"
+    },
+    {
+      "file": "execution-authorization.json",
+      "sha256": "216e323471549a8bf14dc1c63252262e6101fc424565a976165fb63c9773598a"
+    },
+    {
+      "file": "gate1_1_passport.json",
+      "sha256": "a61ca9010b732f315b34ac89b57bfd1b340093814bd6161b668e77f4943bc2d7"
+    },
+    {
+      "file": "pre-execution-receipt.json",
+      "sha256": "10fd9ef9ee421bcf248800feecb9d9e1f679b5826f9e6efdb8d5af515b1a9e82"
+    },
+    {
+      "file": "primary-analysis.json",
+      "sha256": "7e0731418f74accedd787895dd99e5b0b2243388c5470b18ec45ed361e390248"
+    },
+    {
+      "file": "reproducibility-evidence.json",
+      "sha256": "29984d07ff8aed5153f3cbc6cdbb614340b53e40123fa18cf6e0a5d33555eab4"
+    },
+    {
+      "file": "validation-report.json",
+      "sha256": "9f5c64f641c2343862a0f0103a8ddecc45fcf3a82dffa08c2e21e48e2fd43792"
+    }
+  ],
+  "raw_chunk_set": {
+    "included_in_compact_package": false,
+    "pair_chunk_count": 3000,
+    "represented_by_completion_manifest": true
+  },
+  "schema_version": "gate11-evidence-index-v1",
+  "status": "LOCAL_RESULT_CANDIDATE_UNPUBLISHED",
+  "validated_at_utc": "2026-08-30T18:11:41Z"
+}

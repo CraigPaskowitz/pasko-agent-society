@@ -73,6 +73,10 @@ Apache License 2.0.
 
 Gate 1 tasks, policies, parameters, and outcomes are synthetic unless explicitly stated otherwise. Results describe the specified artificial experimental system.
 
+Gate 1.1 is complete. In the preregistered scripted topology benchmark, connected degree-preserving rewiring increased final adoption incidence among initially unseeded agents relative to the degree-4 ring by 4.846 percentage points (paired 95% CI: 4.308 to 5.385 points). The directional hypothesis was supported. The point estimate did not meet the separate five-percentage-point practical-magnitude criterion, and the conservative Hoeffding interval did not certify positivity.
+
+This result concerns a fixed scripted independent-cascade mechanism. It is not evidence of LLM behavior, persuasion, autonomous norm formation, emergent intelligence, general social behavior in real agents, or novel network science. See the compact [Gate 1.1 evidence package](results/gate1_1/GATE_1_1_RESULT_REPORT.md).
+
 ## Gate 1 bootstrap
 
 The bootstrap is a Python-standard-library-only implementation of the controlled-exposure experiment. It includes the deterministic Environment Kernel, all Gate 1 typed actions, the Archive Assembly fixtures, T0–T7, simulator-local communication plumbing, metrics, replay, hashing, Experiment Passports, and a scripted stochastic validation mechanism. It does not include an LLM adapter.

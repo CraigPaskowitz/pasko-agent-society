@@ -1,0 +1,111 @@
+{
+  "analysis_plan_id": "gate11-paired-mean-v1",
+  "campaign_id": "gate11-primary-3000-v1",
+  "campaign_spec_hash": "sha256:76ceaf1e182b5b6ecbe8214a694b4000d47d495165ab025f15112901e71600f2",
+  "claim_scope": "SCRIPTED_TOPOLOGY_PROPAGATION_ONLY",
+  "completion_manifest_hash": "sha256:161e575ca0e56867d4f98ae4159a4214055e93d20062209dcd40639a8502dd86",
+  "content_hash": "sha256:a910f13451e642ca57e81a8b2e1bfa04b9705aabbabe5d63cfde0e7e220a4ca8",
+  "decision": "SUPPORT_H1",
+  "implementation_commit": "d31c78011abfc164fd3d20125bbe995e4023ee4a",
+  "implementation_source_hash": "c8b8dd93b72711eec699cc1fc8981f20beef2c3daed3f3394263c8175dc35b09",
+  "llm_behavior_evidence": false,
+  "schema_version": "gate11-primary-analysis-v1",
+  "statistics": {
+    "directional_statistical_evidence": {
+      "rule": "complete_valid_and_primary_lower_bound_strictly_greater_than_zero",
+      "supported": true
+    },
+    "distribution_free_conservative_certification": {
+      "alpha": 0.05,
+      "certified_positive": false,
+      "half_width": 0.049590855703539646,
+      "lower": -0.0011278927405766817,
+      "method": "two-sided-hoeffding-bounded-minus1-plus1",
+      "upper": 0.09805381866650262
+    },
+    "independent_matched_pairs": 3000,
+    "paired_difference": {
+      "estimand": "mean_rewired_minus_ring",
+      "estimate": 0.048462962962962965,
+      "numerator_difference_distribution": {
+        "-1": 140,
+        "-10": 48,
+        "-11": 36,
+        "-12": 28,
+        "-13": 22,
+        "-14": 16,
+        "-15": 9,
+        "-16": 10,
+        "-17": 3,
+        "-18": 6,
+        "-19": 6,
+        "-2": 126,
+        "-20": 3,
+        "-21": 2,
+        "-25": 1,
+        "-26": 1,
+        "-3": 123,
+        "-4": 121,
+        "-5": 107,
+        "-6": 74,
+        "-7": 72,
+        "-8": 57,
+        "-9": 56,
+        "0": 147,
+        "1": 165,
+        "10": 104,
+        "11": 81,
+        "12": 64,
+        "13": 66,
+        "14": 42,
+        "15": 48,
+        "16": 37,
+        "17": 31,
+        "18": 20,
+        "19": 21,
+        "2": 154,
+        "20": 14,
+        "21": 16,
+        "22": 15,
+        "23": 14,
+        "24": 8,
+        "25": 4,
+        "26": 2,
+        "27": 3,
+        "28": 1,
+        "3": 162,
+        "31": 1,
+        "4": 135,
+        "5": 114,
+        "6": 133,
+        "7": 126,
+        "8": 107,
+        "9": 98
+      },
+      "sample_variance": 0.022639569042447162,
+      "standard_error": 0.002747093557589376
+    },
+    "practical_magnitude": {
+      "threshold": 0.05,
+      "threshold_met": false
+    },
+    "primary_denominator_per_condition": 54,
+    "primary_interval": {
+      "degrees_of_freedom": 2999,
+      "lower": 0.04307658465756581,
+      "method": "paired-mean-student",
+      "t_critical": 1.960755319205,
+      "upper": 0.05384934126836012
+    },
+    "rewired": {
+      "adoption_count": 39420,
+      "denominator": 162000,
+      "mean_incidence": 0.24333333333333335
+    },
+    "ring": {
+      "adoption_count": 31569,
+      "denominator": 162000,
+      "mean_incidence": 0.19487037037037036
+    }
+  }
+}

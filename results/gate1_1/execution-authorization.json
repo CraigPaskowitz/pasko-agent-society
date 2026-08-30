@@ -1,0 +1,11 @@
+{
+  "authorization_id": "gate11-primary-execution-v1",
+  "authorized": true,
+  "campaign_id": "gate11-primary-3000-v1",
+  "campaign_spec_hash": "sha256:76ceaf1e182b5b6ecbe8214a694b4000d47d495165ab025f15112901e71600f2",
+  "implementation_commit": "d31c78011abfc164fd3d20125bbe995e4023ee4a",
+  "implementation_source_hash": "c8b8dd93b72711eec699cc1fc8981f20beef2c3daed3f3394263c8175dc35b09",
+  "pair_count": 3000,
+  "schema_version": "gate11-execution-authorization-v1",
+  "scope": "RUN_3000_MATCHED_PAIRS"
+}

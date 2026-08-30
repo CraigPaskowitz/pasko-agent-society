@@ -1,0 +1,47 @@
+{
+  "artifact_state": {
+    "canonical_pair_chunk_count": 0,
+    "checkpoint_exists": false,
+    "completion_manifest_exists": false,
+    "primary_analysis_exists": false,
+    "production_campaign_directory_preexisting": false,
+    "treatment_separated_scientific_result_inspected": false
+  },
+  "campaign_specification": {
+    "canonical_hash": "sha256:76ceaf1e182b5b6ecbe8214a694b4000d47d495165ab025f15112901e71600f2",
+    "file": "manifests/gate1_1_primary_v1.json",
+    "file_sha256": "2ae4e65f16f39ce73a1487fbdbddd4b15651237a8a3d0a21c8ba2ce94bb4a81b"
+  },
+  "execution": {
+    "branch": "gate-1.1-execution",
+    "head": "4c8bb4d3f88a38469a6edcb770b1b0a037a73ae7"
+  },
+  "gate1_1_implementation": {
+    "certified_commit": "4c8bb4d3f88a38469a6edcb770b1b0a037a73ae7",
+    "scientific_code_commit": "d31c78011abfc164fd3d20125bbe995e4023ee4a",
+    "source_bundle_sha256": "c8b8dd93b72711eec699cc1fc8981f20beef2c3daed3f3394263c8175dc35b09",
+    "tag": "gate1.1-impl-v1"
+  },
+  "gate1_1_preregistration": {
+    "commit": "cc1ab868a7401099751030580649e49258654fe2",
+    "document_sha256": "e6b7d28870c773c4ad7897349b74acfb99775a83905eaf66dcad2602a639c706",
+    "tag": "gate1.1-prereg-v1"
+  },
+  "gate1_2_preregistration": {
+    "commit": "c6e9506525d8e6088a6ecb6f417e375e040fd9aa",
+    "document_sha256": "28e2240b159cad032dbf3d80f28a6d309f80fa11e5ebd9c3edd7d3bc230c8a17",
+    "execution_authorized": false,
+    "tag": "gate1.2-prereg-v1"
+  },
+  "recorded_at_utc": "2026-08-30T15:34:18Z",
+  "schema_version": "gate11-pre-execution-receipt-v1",
+  "status": {
+    "checkpoint_hash": null,
+    "completed": 0,
+    "integrity_status": "PASS",
+    "invalid": 0,
+    "pending": 3000,
+    "primary_outcome_generating_runs": 0
+  },
+  "statement": "All Gate 1.1 scientific choices, the certified implementation, and the Gate 1.2 robustness criteria were frozen before canonical Gate 1.1 outcome generation."
+}
