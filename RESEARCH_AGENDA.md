@@ -1,18 +1,42 @@
 # Research Agenda
 
-## Gate 1 — Peer Exposure & Boundary Propagation
+## Roadmap provenance
 
-Controlled test of whether peer-strategy exposure changes disallowed toy-action incidence.
+At the public Gate 1 baseline `f4436dc0985620512b647d825e712c72accb3e7c`, this roadmap labeled Gate 1.1 “Replication & Model Dependence” and Gate 2 “Communication Topology.” No Gate 1.1 outcome-generating work had begun.
 
-## Gate 1.1 — Replication & Model Dependence
+Before any Gate 1.1 outcome was generated, the roadmap was prospectively reordered to establish a scripted behavioral benchmark and its robustness rail before introducing model-mediated decisions. The original roadmap remains permanently available in Git history at the baseline commit. This update does not claim that a previously named gate was executed or that a result already exists.
 
-Repeat with fresh calls, alternate model versions, scripted baselines, and eventually local/open models.
+## Gate 1 — Deterministic Experimental Infrastructure
 
-Goal: distinguish model-specific from structural effects.
+**Status: complete at `f4436dc0985620512b647d825e712c72accb3e7c`.**
 
-## Gate 2 — Communication Topology
+Validated the synthetic task and policy, T0–T7 controlled exposures, typed actions, deterministic population execution, treatment matching, event-ledger provenance, hashing, replay, Experiment Passports, null-result reporting, parallel equivalence, and the no-external-I/O safety boundary.
 
-Study complete, sparse, small-world, and modular graphs; seed-adopter fractions; forwarding; lineage; and content-matched broadcast controls.
+Gate 1 established laboratory validity. Its scripted T2–T5 null was not evidence about LLM behavior or a peer-exposure effect.
+
+## Gate 1.1 — Preregistered Scripted Topology/Propagation Benchmark
+
+**Status: approved for an immutable public preregistration commit; no outcome-generating run has occurred.**
+
+Test whether connected degree-preserving rewiring of a degree-4 ring changes final adoption incidence among initially unseeded agents under one fixed scripted independent-cascade mechanism.
+
+The purpose is to show that the validated laboratory can reproduce and measure a genuine population-level phenomenon. Ring-versus-rewired contagion is established network science; novelty is not the claim.
+
+The immutable protocol is `preregistrations/GATE_1_1_PREREGISTRATION.md` after its public preregistration commit.
+
+## Gate 1.2 — Preregistered Replication & Robustness
+
+Preregister exact-design replication and outcome-independent specification checks before Gate 1.1 is unblinded, preferably before its primary execution.
+
+The separately versioned protocol will freeze exact panels across transmission probability, seed fraction, propagation horizon, rewiring intensity, seed dispersion, and alternate connected degree-preserving topology realizations. Gate 1.2 cannot rescue, redefine, or strengthen Gate 1.1 after results are observed.
+
+## Gate 2 — Bounded LLM-Mediated Agent Behavior
+
+Introduce model-mediated interpretation only after the scripted phenomenon and robustness rails are established. Gate 1 scripted mechanisms remain the control rail.
+
+Any adapter requires a separate preregistration and safety review, one bounded simulator-only action interface, complete call provenance, no chain-of-thought collection, no live calls in tests/CI, no required API key, and no browser, network tool, shell, subprocess, arbitrary filesystem, connector, credential, or external messaging capability.
+
+Goal: distinguish semantic/model-mediated behavior from effects mechanically defined by scripted rules and topology.
 
 ## Gate 3 — Norm Formation & Safe Exit
 
