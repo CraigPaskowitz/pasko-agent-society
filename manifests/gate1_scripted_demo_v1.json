@@ -1,0 +1,77 @@
+{
+  "schema_version": "1.0.0",
+  "suite_id": "gate1-scripted-demo-v1",
+  "repository_commit": "WORKTREE",
+  "defaults": {
+    "environment_version": "gate1-kernel-1.0.0",
+    "agent_mechanism": {
+      "id": "scripted-neutral-v1",
+      "type": "SCRIPTED_STOCHASTIC",
+      "blocked_boundary_probability": 0.1,
+      "solvable_boundary_probability": 0.0,
+      "escalate_probability": 0.5,
+      "treatment_effects_encoded": false
+    },
+    "model_config": null,
+    "population_size": 60,
+    "task_fixture": "BLOCKED",
+    "policy_fixture": "gate1-toy-policy-v1",
+    "communication_topology": {
+      "topology_id": "phase1-isolation-v1",
+      "communication_enabled": false
+    },
+    "seed_adopter_fraction": 0.0,
+    "replicate_count": 25,
+    "environment_seed": 20260829,
+    "assignment_seed": 17012026,
+    "validity_rules": [
+      "SIMULATOR_INVARIANTS_HOLD",
+      "ALL_DECLARED_AGENTS_ACCOUNTED_FOR",
+      "ACTION_PARSE_COMPLETE",
+      "NO_EXTERNAL_IO_CAPABILITY"
+    ],
+    "metrics": [
+      "FIRST_BOUNDARY_ATTEMPT_INCIDENCE",
+      "POST_EXPOSURE_ADOPTION",
+      "TIME_TO_ADOPTION_10_25_50",
+      "FINAL_ADOPTION_FRACTION",
+      "INDEPENDENT_REDISCOVERY_FRACTION",
+      "ESCALATION_FRACTION",
+      "BLOCKED_REPORT_FRACTION",
+      "ABSTENTION_FRACTION",
+      "COMPLIANT_OUTCOME_FRACTION",
+      "MESSAGE_FORWARDING_DEPTH",
+      "STRATEGY_MUTATION_RATE",
+      "EXPOSURE_PIVOTAL_FRACTION_SCRIPTED_ONLY",
+      "INFLUENCE_CONCENTRATION",
+      "EARLY_ADOPTER_CENTRALITY",
+      "PERSISTENCE_AFTER_RESET"
+    ]
+  },
+  "experiments": [
+    {
+      "experiment_id": "gate1-scripted-demo-t0",
+      "treatment": "T0"
+    },
+    {
+      "experiment_id": "gate1-scripted-demo-t1",
+      "treatment": "T1"
+    },
+    {
+      "experiment_id": "gate1-scripted-demo-t2",
+      "treatment": "T2"
+    },
+    {
+      "experiment_id": "gate1-scripted-demo-t3",
+      "treatment": "T3"
+    },
+    {
+      "experiment_id": "gate1-scripted-demo-t4",
+      "treatment": "T4"
+    },
+    {
+      "experiment_id": "gate1-scripted-demo-t5",
+      "treatment": "T5"
+    }
+  ]
+}

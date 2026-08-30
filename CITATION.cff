@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this software or its experimental artifacts, please cite it."
+title: "Pasko Agent Society"
+type: software
+version: 0.1.0
+date-released: 2026-08-29
+license: Apache-2.0
+authors:
+  - name: "Pasko Labs"
+abstract: >-
+  An open experimental laboratory for reproducible research on collective
+  AI-agent behavior using controlled synthetic environments.
+keywords:
+  - multi-agent systems
+  - reproducibility
+  - controlled experiments
+  - collective behavior
