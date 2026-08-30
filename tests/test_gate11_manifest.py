@@ -39,11 +39,14 @@ class Gate11CampaignSpecificationTests(unittest.TestCase):
         self.assertEqual(spec.raw["expected_artifacts"]["pair_chunks"], 3000)
         self.assertEqual(spec.raw["expected_artifacts"]["condition_results"], 6000)
 
-    def test_pending_manifest_cannot_be_used_as_certified_execution_identity(self) -> None:
-        spec = load_campaign_spec(MANIFEST)
-        self.assertEqual(spec.implementation_status, "PENDING_CERTIFICATION")
-        with self.assertRaises(Gate11ProtocolError):
-            load_campaign_spec(MANIFEST, require_certified=True)
+    def test_manifest_binds_the_certified_candidate_source_identity(self) -> None:
+        spec = load_campaign_spec(MANIFEST, require_certified=True)
+        self.assertEqual(spec.implementation_status, "CERTIFIED_CANDIDATE")
+        self.assertEqual(
+            spec.implementation_commit,
+            "d31c78011abfc164fd3d20125bbe995e4023ee4a",
+        )
+        self.assertEqual(spec.implementation_source_hash, implementation_source_hash())
 
     def test_scientific_parameter_mutation_is_rejected(self) -> None:
         spec = load_campaign_spec(MANIFEST)

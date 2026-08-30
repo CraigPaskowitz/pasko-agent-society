@@ -61,10 +61,10 @@
     "primary_analyses": 1
   },
   "implementation": {
-    "commit": "PENDING",
+    "commit": "d31c78011abfc164fd3d20125bbe995e4023ee4a",
     "proposed_tag": "gate1.1-impl-v1",
-    "source_bundle_sha256": "PENDING",
-    "status": "PENDING_CERTIFICATION"
+    "source_bundle_sha256": "c8b8dd93b72711eec699cc1fc8981f20beef2c3daed3f3394263c8175dc35b09",
+    "status": "CERTIFIED_CANDIDATE"
   },
   "mechanism": {
     "id": "scripted-independent-cascade-v1",
