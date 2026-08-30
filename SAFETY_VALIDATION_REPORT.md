@@ -82,7 +82,7 @@ This demonstration validates infrastructure only and is not evidence about LLM b
 - Unit and invariant tests: PASS.
 - Secret/privacy/static safety scan: PASS.
 - `git diff --check`: PASS.
-- Clean-clone validation: PENDING_FINAL_CLONE.
-- CI status: PENDING_PUBLICATION.
+- Clean-clone validation: PASS at evidence commit `c5fbce489146ed897f964c21f7a60bbac6cbb848` (compile, 42 tests, safety scan, and `git diff --check`).
+- CI workflow: configured for Python 3.11 and 3.12; live status is reported by the public repository check state.
 
 No safety claim extends beyond this declared synthetic Gate 1 implementation.
