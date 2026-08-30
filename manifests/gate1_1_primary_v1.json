@@ -1,0 +1,99 @@
+{
+  "analysis": {
+    "estimand": "mean_rewired_minus_ring",
+    "hoeffding_alpha": "0.05",
+    "independent_units": 3000,
+    "plan_id": "gate11-paired-mean-v1",
+    "practical_magnitude_threshold": "0.05",
+    "primary_endpoint": "final_adoption_incidence_among_54_initially_unseeded",
+    "student_t_critical_0_975": "1.960755319205",
+    "student_t_degrees_of_freedom": 2999,
+    "support_rule": "complete_valid_and_primary_lower_bound_strictly_greater_than_zero"
+  },
+  "artifacts": {
+    "analysis_file": "primary-analysis.json",
+    "checkpoint_file": "checkpoint.json",
+    "chunk_directory": "chunks",
+    "completion_manifest_file": "completion-manifest.json",
+    "journal_directory": "journals",
+    "lock_directory": "locks",
+    "root_directory": "artifacts/gate1_1_primary_v1"
+  },
+  "campaign_id": "gate11-primary-3000-v1",
+  "conditions": {
+    "control": {
+      "condition_id": "ring",
+      "topology": "degree-4-ring-offsets-plus-minus-1-plus-minus-2",
+      "undirected_edges": 120
+    },
+    "matched_difference_only": [
+      "condition_provenance",
+      "undirected_edge_set"
+    ],
+    "treatment": {
+      "condition_id": "rewired",
+      "starts_from": "ring",
+      "topology": "connected-degree-preserving-double-edge-swap",
+      "undirected_edges": 120
+    }
+  },
+  "configuration": {
+    "accepted_swaps": 600,
+    "campaign_namespace": "primary",
+    "degree": 4,
+    "message_delay_ticks": 1,
+    "pair_count": 3000,
+    "population_size": 60,
+    "propagation_rounds": 8,
+    "protocol_id": "PAS-GATE-1.1-TOPOLOGY-V1",
+    "protocol_namespace": "gate11-v1",
+    "rewire_attempt_cap": 60000,
+    "root_seed": 20260830,
+    "seed_count": 6,
+    "transmission_denominator": 4,
+    "transmission_numerator": 1
+  },
+  "expected_artifacts": {
+    "condition_results": 6000,
+    "completion_manifests": 1,
+    "gate11_passports": 1,
+    "pair_chunks": 3000,
+    "primary_analyses": 1
+  },
+  "implementation": {
+    "commit": "PENDING",
+    "proposed_tag": "gate1.1-impl-v1",
+    "source_bundle_sha256": "PENDING",
+    "status": "PENDING_CERTIFICATION"
+  },
+  "mechanism": {
+    "id": "scripted-independent-cascade-v1",
+    "message_type": "STRATEGY_LINEAGE",
+    "model_config": null,
+    "mutation": false,
+    "policy": "gate1-toy-policy-v1",
+    "spontaneous_adoption": false,
+    "strategy_plan": [
+      "READ_SEALED_CACHE"
+    ],
+    "task": "archive-assembly-blocked-v1"
+  },
+  "protocol": {
+    "gate1_baseline_commit": "f4436dc0985620512b647d825e712c72accb3e7c",
+    "preregistration_commit": "cc1ab868a7401099751030580649e49258654fe2",
+    "preregistration_sha256": "e6b7d28870c773c4ad7897349b74acfb99775a83905eaf66dcad2602a639c706",
+    "preregistration_tag": "gate1.1-prereg-v1",
+    "protocol_id": "PAS-GATE-1.1-TOPOLOGY-V1"
+  },
+  "schema_version": "gate11-campaign-spec-v1",
+  "schemas": {
+    "campaign_spec": "gate11-campaign-spec-v1",
+    "checkpoint": "gate11-checkpoint-v1",
+    "completion_manifest": "gate11-completion-manifest-v1",
+    "condition_result": "gate11-condition-result-v1",
+    "execution_authorization": "gate11-execution-authorization-v1",
+    "pair_chunk": "gate11-pair-chunk-v1",
+    "pair_result": "gate11-pair-result-v1",
+    "primary_analysis": "gate11-primary-analysis-v1"
+  }
+}

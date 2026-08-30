@@ -7,3 +7,4 @@ build/
 dist/
 *.egg-info/
 results/generated/
+artifacts/gate1_1_primary_v1/
