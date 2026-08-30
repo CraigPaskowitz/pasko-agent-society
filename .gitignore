@@ -8,3 +8,4 @@ dist/
 *.egg-info/
 results/generated/
 artifacts/gate1_1_primary_v1/
+artifacts/gate1_2_v1/

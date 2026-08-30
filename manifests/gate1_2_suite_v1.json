@@ -1,0 +1,421 @@
+{
+  "analysis": {
+    "cross_gate_magnitude": {
+      "degrees_of_freedom": 2999,
+      "equivalence_margin": "0.05",
+      "gate1_1_estimate": "0.048462962962962965",
+      "gate1_1_standard_error": "0.002747093557589376",
+      "gate1_1_supported": true,
+      "plan_id": "gate12-gate11-magnitude-equivalence-v1",
+      "t_critical_0_95": "1.645361877311"
+    },
+    "joint_classification": {
+      "ordered_labels": [
+        "invalid/inconclusive",
+        "replicated and robust",
+        "replicated but specification-sensitive",
+        "replicated; robustness directionally consistent but imprecise",
+        "directionally consistent but imprecise",
+        "failed replication",
+        "heterogeneous/inconclusive",
+        "concordant non-support"
+      ],
+      "plan_id": "gate12-joint-classification-v1"
+    },
+    "primary_replication": {
+      "degrees_of_freedom": 2999,
+      "endpoint": "final_adoption_incidence_among_initially_unseeded",
+      "estimand": "mean_rewired_minus_ring",
+      "hoeffding_alpha": "0.05",
+      "independent_units": 3000,
+      "plan_id": "gate12-exact-replication-paired-mean-v1",
+      "practical_magnitude_threshold": "0.05",
+      "support_rule": "complete_valid_and_lower_bound_strictly_greater_than_zero",
+      "t_critical_0_975": "1.960755319205"
+    },
+    "robustness_family": {
+      "contrast_ids": [
+        "p-1-of-8",
+        "p-3-of-8",
+        "seeds-3",
+        "seeds-12",
+        "rounds-4",
+        "rounds-12",
+        "swaps-360",
+        "swaps-840",
+        "seed-placement-clustered",
+        "seed-placement-dispersed",
+        "alternate-topology-3"
+      ],
+      "degrees_of_freedom": 999,
+      "directional_stability_rule": "every_point_estimate_strictly_greater_than_zero",
+      "family_size": 11,
+      "family_t_critical": "2.844038318881",
+      "independent_units_per_contrast": 1000,
+      "plan_id": "gate12-robustness-bonferroni-v1",
+      "strong_reversal_rule": "any_simultaneous_upper_bound_strictly_less_than_zero",
+      "strong_robustness_rule": "every_simultaneous_lower_bound_strictly_greater_than_zero",
+      "unadjusted_t_critical_0_975": "1.962341461134"
+    }
+  },
+  "artifacts": {
+    "alternate_topology_directory": "alternate-topology",
+    "analysis_file": "gate1_2-confirmatory-analysis.json",
+    "checkpoint_file": "checkpoint.json",
+    "chunk_directory": "chunks",
+    "completion_manifest_file": "completion-manifest.json",
+    "exact_replication_directory": "exact-replication",
+    "journal_directory": "journals",
+    "lock_directory": "locks",
+    "root_directory": "artifacts/gate1_2_v1",
+    "standard_robustness_directory": "standard-robustness",
+    "suite_completion_file": "suite-completion-manifest.json"
+  },
+  "campaign_families": {
+    "alternate_topology": {
+      "accepted_swaps": 600,
+      "campaign_id": "gate12-alt-topology-1000-v1",
+      "campaign_namespace": "alternate-topology",
+      "canonical_hash": "sha256:ca32d2cd1db4563da14911bfe0c3bfc0574a04bd616bfc59ef0d8d23c5cb7020",
+      "cell_id": "alternate-topology-3",
+      "degree": 4,
+      "expected_condition_runs": 4000,
+      "message_delay_ticks": 1,
+      "population_size": 60,
+      "primary_denominator": 54,
+      "propagation_rounds": 8,
+      "rewire_attempt_cap": 60000,
+      "rewired_realizations_per_cluster": 3,
+      "root_seed": 20260902,
+      "seed_count": 6,
+      "seed_placement": "uniform",
+      "transmission": {
+        "denominator": 4,
+        "numerator": 1
+      },
+      "undirected_edges": 120,
+      "unit_count": 1000
+    },
+    "exact_replication": {
+      "accepted_swaps": 600,
+      "campaign_id": "gate12-replication-3000-v1",
+      "campaign_namespace": "exact-replication",
+      "canonical_hash": "sha256:fa05076a90c42bae40b04413a74c48a282f5ad07b06862db75b7898cd3a8102b",
+      "cell_id": null,
+      "degree": 4,
+      "expected_condition_runs": 6000,
+      "message_delay_ticks": 1,
+      "population_size": 60,
+      "primary_denominator": 54,
+      "propagation_rounds": 8,
+      "rewire_attempt_cap": 60000,
+      "root_seed": 20260831,
+      "seed_count": 6,
+      "seed_placement": "uniform",
+      "transmission": {
+        "denominator": 4,
+        "numerator": 1
+      },
+      "undirected_edges": 120,
+      "unit_count": 3000
+    },
+    "standard_robustness": {
+      "campaign_id": "gate12-standard-robustness-1000-v1",
+      "canonical_hash": "sha256:92f890817009d4dbb73cac348f3a9de653237e6484ca53e35e7c5379533feea5",
+      "cell_count": 10,
+      "cells": [
+        {
+          "accepted_swaps": 600,
+          "campaign_id": "gate12-standard-robustness-1000-v1",
+          "campaign_namespace": "robustness",
+          "canonical_hash": "sha256:32ae331b703270a75ae5ad761e1e202695f50bbf4dafcca21a638999a057f456",
+          "cell_id": "p-1-of-8",
+          "degree": 4,
+          "expected_condition_runs": 2000,
+          "message_delay_ticks": 1,
+          "population_size": 60,
+          "primary_denominator": 54,
+          "propagation_rounds": 8,
+          "rewire_attempt_cap": 60000,
+          "root_seed": 20260901,
+          "seed_count": 6,
+          "seed_placement": "uniform",
+          "transmission": {
+            "denominator": 8,
+            "numerator": 1
+          },
+          "undirected_edges": 120,
+          "unit_count": 1000
+        },
+        {
+          "accepted_swaps": 600,
+          "campaign_id": "gate12-standard-robustness-1000-v1",
+          "campaign_namespace": "robustness",
+          "canonical_hash": "sha256:82bf3e51c4e4785727d7fb800c98c7aa2a2720539e6357c6187aac558c462788",
+          "cell_id": "p-3-of-8",
+          "degree": 4,
+          "expected_condition_runs": 2000,
+          "message_delay_ticks": 1,
+          "population_size": 60,
+          "primary_denominator": 54,
+          "propagation_rounds": 8,
+          "rewire_attempt_cap": 60000,
+          "root_seed": 20260901,
+          "seed_count": 6,
+          "seed_placement": "uniform",
+          "transmission": {
+            "denominator": 8,
+            "numerator": 3
+          },
+          "undirected_edges": 120,
+          "unit_count": 1000
+        },
+        {
+          "accepted_swaps": 600,
+          "campaign_id": "gate12-standard-robustness-1000-v1",
+          "campaign_namespace": "robustness",
+          "canonical_hash": "sha256:990097ada5db0e2493ac8db38e076ddecd8ec5f99178e79f0c179800ceb2a89d",
+          "cell_id": "seeds-3",
+          "degree": 4,
+          "expected_condition_runs": 2000,
+          "message_delay_ticks": 1,
+          "population_size": 60,
+          "primary_denominator": 57,
+          "propagation_rounds": 8,
+          "rewire_attempt_cap": 60000,
+          "root_seed": 20260901,
+          "seed_count": 3,
+          "seed_placement": "uniform",
+          "transmission": {
+            "denominator": 4,
+            "numerator": 1
+          },
+          "undirected_edges": 120,
+          "unit_count": 1000
+        },
+        {
+          "accepted_swaps": 600,
+          "campaign_id": "gate12-standard-robustness-1000-v1",
+          "campaign_namespace": "robustness",
+          "canonical_hash": "sha256:430867001d04dde3a42149b5ff18860b421cd017347fd5512f8e3ca29a73fb90",
+          "cell_id": "seeds-12",
+          "degree": 4,
+          "expected_condition_runs": 2000,
+          "message_delay_ticks": 1,
+          "population_size": 60,
+          "primary_denominator": 48,
+          "propagation_rounds": 8,
+          "rewire_attempt_cap": 60000,
+          "root_seed": 20260901,
+          "seed_count": 12,
+          "seed_placement": "uniform",
+          "transmission": {
+            "denominator": 4,
+            "numerator": 1
+          },
+          "undirected_edges": 120,
+          "unit_count": 1000
+        },
+        {
+          "accepted_swaps": 600,
+          "campaign_id": "gate12-standard-robustness-1000-v1",
+          "campaign_namespace": "robustness",
+          "canonical_hash": "sha256:ad5914008c3644baeaa65c8e5f5743f7eb4335edd04ab091a3e8591796b50b5e",
+          "cell_id": "rounds-4",
+          "degree": 4,
+          "expected_condition_runs": 2000,
+          "message_delay_ticks": 1,
+          "population_size": 60,
+          "primary_denominator": 54,
+          "propagation_rounds": 4,
+          "rewire_attempt_cap": 60000,
+          "root_seed": 20260901,
+          "seed_count": 6,
+          "seed_placement": "uniform",
+          "transmission": {
+            "denominator": 4,
+            "numerator": 1
+          },
+          "undirected_edges": 120,
+          "unit_count": 1000
+        },
+        {
+          "accepted_swaps": 600,
+          "campaign_id": "gate12-standard-robustness-1000-v1",
+          "campaign_namespace": "robustness",
+          "canonical_hash": "sha256:182a3a1961b1a1c7dea2d62c6f7031af80172403956366b8571de455f0b40a0b",
+          "cell_id": "rounds-12",
+          "degree": 4,
+          "expected_condition_runs": 2000,
+          "message_delay_ticks": 1,
+          "population_size": 60,
+          "primary_denominator": 54,
+          "propagation_rounds": 12,
+          "rewire_attempt_cap": 60000,
+          "root_seed": 20260901,
+          "seed_count": 6,
+          "seed_placement": "uniform",
+          "transmission": {
+            "denominator": 4,
+            "numerator": 1
+          },
+          "undirected_edges": 120,
+          "unit_count": 1000
+        },
+        {
+          "accepted_swaps": 360,
+          "campaign_id": "gate12-standard-robustness-1000-v1",
+          "campaign_namespace": "robustness",
+          "canonical_hash": "sha256:30506cdc67d1a4cdf329729517e51c68be5881d24ccfba6fc33224df11f360fa",
+          "cell_id": "swaps-360",
+          "degree": 4,
+          "expected_condition_runs": 2000,
+          "message_delay_ticks": 1,
+          "population_size": 60,
+          "primary_denominator": 54,
+          "propagation_rounds": 8,
+          "rewire_attempt_cap": 60000,
+          "root_seed": 20260901,
+          "seed_count": 6,
+          "seed_placement": "uniform",
+          "transmission": {
+            "denominator": 4,
+            "numerator": 1
+          },
+          "undirected_edges": 120,
+          "unit_count": 1000
+        },
+        {
+          "accepted_swaps": 840,
+          "campaign_id": "gate12-standard-robustness-1000-v1",
+          "campaign_namespace": "robustness",
+          "canonical_hash": "sha256:24b04bcfb05f3694fd190fb89f1f85d73d60e6e1604b769b3028b94577e1c807",
+          "cell_id": "swaps-840",
+          "degree": 4,
+          "expected_condition_runs": 2000,
+          "message_delay_ticks": 1,
+          "population_size": 60,
+          "primary_denominator": 54,
+          "propagation_rounds": 8,
+          "rewire_attempt_cap": 60000,
+          "root_seed": 20260901,
+          "seed_count": 6,
+          "seed_placement": "uniform",
+          "transmission": {
+            "denominator": 4,
+            "numerator": 1
+          },
+          "undirected_edges": 120,
+          "unit_count": 1000
+        },
+        {
+          "accepted_swaps": 600,
+          "campaign_id": "gate12-standard-robustness-1000-v1",
+          "campaign_namespace": "robustness",
+          "canonical_hash": "sha256:cbca8a8392ef0c3162b325154746b04de866b0e8db0ec9ad69343a145db48825",
+          "cell_id": "seed-placement-clustered",
+          "degree": 4,
+          "expected_condition_runs": 2000,
+          "message_delay_ticks": 1,
+          "population_size": 60,
+          "primary_denominator": 54,
+          "propagation_rounds": 8,
+          "rewire_attempt_cap": 60000,
+          "root_seed": 20260901,
+          "seed_count": 6,
+          "seed_placement": "clustered",
+          "transmission": {
+            "denominator": 4,
+            "numerator": 1
+          },
+          "undirected_edges": 120,
+          "unit_count": 1000
+        },
+        {
+          "accepted_swaps": 600,
+          "campaign_id": "gate12-standard-robustness-1000-v1",
+          "campaign_namespace": "robustness",
+          "canonical_hash": "sha256:3baf2d3081f719bf1d73330bb7748cb23d299c066263056129fd21429f8600ca",
+          "cell_id": "seed-placement-dispersed",
+          "degree": 4,
+          "expected_condition_runs": 2000,
+          "message_delay_ticks": 1,
+          "population_size": 60,
+          "primary_denominator": 54,
+          "propagation_rounds": 8,
+          "rewire_attempt_cap": 60000,
+          "root_seed": 20260901,
+          "seed_count": 6,
+          "seed_placement": "dispersed",
+          "transmission": {
+            "denominator": 4,
+            "numerator": 1
+          },
+          "undirected_edges": 120,
+          "unit_count": 1000
+        }
+      ],
+      "condition_runs_per_cell": 2000,
+      "root_seed": 20260901,
+      "units_per_cell": 1000
+    }
+  },
+  "expected_artifacts": {
+    "cluster_chunks": 1000,
+    "condition_runs": 30000,
+    "confirmatory_analyses": 1,
+    "gate12_passports": 1,
+    "independent_units": 14000,
+    "pair_chunks": 13000,
+    "scripted_agent_runs": 1800000,
+    "subcampaign_completion_manifests": 12,
+    "suite_completion_manifests": 1
+  },
+  "implementation": {
+    "commit": "PENDING",
+    "proposed_tag": "gate1.2-impl-v1",
+    "source_bundle_sha256": "PENDING",
+    "status": "PENDING_CERTIFICATION"
+  },
+  "protocol": {
+    "gate1_1_provenance": {
+      "campaign_hash": "sha256:76ceaf1e182b5b6ecbe8214a694b4000d47d495165ab025f15112901e71600f2",
+      "evidence_index_sha256": "648826dadfd52bb6fe572ee3532a23f6266074113768fa7e279f636167d147ba",
+      "implementation_commit": "4c8bb4d3f88a38469a6edcb770b1b0a037a73ae7",
+      "implementation_tag": "gate1.1-impl-v1",
+      "passport_sha256": "a61ca9010b732f315b34ac89b57bfd1b340093814bd6161b668e77f4943bc2d7",
+      "preregistration_commit": "cc1ab868a7401099751030580649e49258654fe2",
+      "preregistration_sha256": "e6b7d28870c773c4ad7897349b74acfb99775a83905eaf66dcad2602a639c706",
+      "preregistration_tag": "gate1.1-prereg-v1",
+      "primary_analysis_content_hash": "sha256:a910f13451e642ca57e81a8b2e1bfa04b9705aabbabe5d63cfde0e7e220a4ca8",
+      "primary_analysis_file_sha256": "7e0731418f74accedd787895dd99e5b0b2243388c5470b18ec45ed361e390248",
+      "result_commit": "43081df22f7b84ba16c2cf7e8edca28b45105ac4",
+      "result_report_sha256": "7df93c11bcb2e5015112951122cb6e06526d6d976d76bcf04fbd99cbbe00e419",
+      "result_tag": "gate1.1-result-v1",
+      "scientific_code_commit": "d31c78011abfc164fd3d20125bbe995e4023ee4a",
+      "source_bundle_sha256": "c8b8dd93b72711eec699cc1fc8981f20beef2c3daed3f3394263c8175dc35b09"
+    },
+    "gate1_2_preregistration": {
+      "commit": "c6e9506525d8e6088a6ecb6f417e375e040fd9aa",
+      "document_sha256": "28e2240b159cad032dbf3d80f28a6d309f80fa11e5ebd9c3edd7d3bc230c8a17",
+      "tag": "gate1.2-prereg-v1"
+    },
+    "protocol_id": "PAS-GATE-1.2-ROBUSTNESS-V1",
+    "protocol_namespace": "gate12-v1"
+  },
+  "schema_version": "gate12-suite-spec-v1",
+  "schemas": {
+    "checkpoint": "gate12-checkpoint-v1",
+    "cluster_chunk": "gate12-cluster-chunk-v1",
+    "cluster_result": "gate12-cluster-result-v1",
+    "completion_manifest": "gate12-completion-manifest-v1",
+    "condition_result": "gate12-condition-result-v1",
+    "confirmatory_analysis": "gate12-confirmatory-analysis-v1",
+    "execution_authorization": "gate12-execution-authorization-v1",
+    "pair_chunk": "gate12-pair-chunk-v1",
+    "pair_result": "gate12-pair-result-v1",
+    "suite_completion": "gate12-suite-completion-v1",
+    "suite_spec": "gate12-suite-spec-v1"
+  },
+  "suite_id": "gate12-suite-v1"
+}

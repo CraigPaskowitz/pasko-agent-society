@@ -78,7 +78,7 @@ def scan_private_host_data(files: list[Path]) -> list[dict[str, str]]:
 
 def scan_runtime_imports() -> list[dict[str, str]]:
     findings = []
-    for path in sorted(PACKAGE.glob("*.py")):
+    for path in sorted(PACKAGE.rglob("*.py")):
         tree = ast.parse(path.read_text(encoding="utf-8"), filename=str(path))
         for node in ast.walk(tree):
             if isinstance(node, ast.Import):
@@ -102,7 +102,7 @@ def scan_runtime_imports() -> list[dict[str, str]]:
 def scan_proprietary_markers() -> list[dict[str, str]]:
     markers = ("Open" + "Claw", "Pasko " + "Republic", "Study " + "Sunday")
     findings = []
-    for path in sorted(PACKAGE.glob("*.py")):
+    for path in sorted(PACKAGE.rglob("*.py")):
         text = path.read_text(encoding="utf-8", errors="replace")
         for marker in markers:
             if marker.casefold() in text.casefold():
@@ -119,7 +119,7 @@ def scan_proprietary_markers() -> list[dict[str, str]]:
 def scan_offensive_capability() -> list[dict[str, str]]:
     forbidden_roots = {"impacket", "nmap", "scapy"}
     findings = []
-    for path in sorted(PACKAGE.glob("*.py")):
+    for path in sorted(PACKAGE.rglob("*.py")):
         tree = ast.parse(path.read_text(encoding="utf-8"), filename=str(path))
         for node in ast.walk(tree):
             if isinstance(node, ast.Import):
