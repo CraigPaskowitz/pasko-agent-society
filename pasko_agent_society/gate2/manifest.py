@@ -111,6 +111,13 @@ def implementation_source_inventory(repository_root: Path | None = None) -> list
         path.relative_to(root).as_posix()
         for path in sorted((root / "scripts").glob("gate2_*.py"))
     ]
+    scripts.extend(
+        [
+            "scripts/build_gate2_result_package.py",
+            "scripts/validate_gate2_implementation.py",
+            "scripts/validate_gate2_result.py",
+        ]
+    )
     inventory = []
     for relative in sorted(set(shared + gate2 + scripts)):
         path = root / relative

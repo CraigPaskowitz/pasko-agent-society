@@ -36,6 +36,15 @@ class Gate2ManifestSafetyTests(unittest.TestCase):
         self.assertEqual(len(first), 64)
         int(first, 16)
 
+    def test_source_bundle_binds_operator_and_result_machinery(self) -> None:
+        from pasko_agent_society.gate2.manifest import implementation_source_inventory
+
+        paths = {item["path"] for item in implementation_source_inventory(ROOT)}
+        self.assertIn("scripts/gate2_run.py", paths)
+        self.assertIn("scripts/build_gate2_result_package.py", paths)
+        self.assertIn("scripts/validate_gate2_implementation.py", paths)
+        self.assertIn("scripts/validate_gate2_result.py", paths)
+
     def test_evidence_schema_bytes_are_frozen(self) -> None:
         self.assertEqual(verify_evidence_schema_files(ROOT), EVIDENCE_SCHEMA_HASHES)
 
