@@ -21,7 +21,12 @@ MANIFEST = ROOT / "manifests" / "gate2_peer_exposure_v1.json"
 class Gate2ManifestSafetyTests(unittest.TestCase):
     def test_candidate_manifest_binds_frozen_design_without_outcomes(self) -> None:
         spec = load_campaign_spec(MANIFEST)
-        self.assertEqual(spec.implementation_status, "PENDING_CERTIFICATION")
+        self.assertEqual(spec.implementation_status, "CERTIFIED_CANDIDATE")
+        self.assertEqual(spec.implementation_commit, "a39d0d52e1b3a3696a1c76125ef93673eac81438")
+        self.assertEqual(
+            spec.implementation_source_hash,
+            "e05e7576e4d9d9a13950f12efe2e50ebff0b2abbcae6f3b41b9e9b892f50e1ca",
+        )
         self.assertEqual(spec.raw["design"]["analyzed_matched_pairs"], 200)
         self.assertEqual(spec.raw["design"]["reserve_pair_ids"], [200, 219])
         self.assertEqual(spec.raw["expected"]["maximum_provider_attempts"], 71280)

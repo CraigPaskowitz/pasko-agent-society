@@ -62,9 +62,9 @@
   },
   "implementation": {
     "proposed_tag": "gate2-impl-v1",
-    "scientific_code_commit": "PENDING",
-    "source_bundle_sha256": "PENDING",
-    "status": "PENDING_CERTIFICATION"
+    "scientific_code_commit": "a39d0d52e1b3a3696a1c76125ef93673eac81438",
+    "source_bundle_sha256": "e05e7576e4d9d9a13950f12efe2e50ebff0b2abbcae6f3b41b9e9b892f50e1ca",
+    "status": "CERTIFIED_CANDIDATE"
   },
   "model": {
     "api_family": "responses",
