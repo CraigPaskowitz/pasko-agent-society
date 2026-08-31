@@ -68,6 +68,15 @@ EXPECTED_TAGS = {
         "34fd68e4a40971164e2ba76d4fa8c5e0316c8edd",
         "b4ca7b598215d14102969045e4717cd5007f1bc3",
     ),
+    "gate1.2-result-v1": (
+        "ab70cc827192f4571d22fd2f787c60f36e8a9503",
+        "618e0322376005d1aa7eb783c93518d46773724a",
+    ),
+}
+HISTORICAL_GATE2_ABSENCE_COMMITS = {
+    "gate1.2-preregistration-freeze": "c6e9506525d8e6088a6ecb6f417e375e040fd9aa",
+    "gate1.2-implementation-freeze": "b4ca7b598215d14102969045e4717cd5007f1bc3",
+    "gate1.2-result-freeze": "618e0322376005d1aa7eb783c93518d46773724a",
 }
 EXPECTED_GATE11_HASHES = {
     "GATE_1_1_RESULT_REPORT.md": (
@@ -113,6 +122,47 @@ def _git_text(*args: str) -> str:
     return subprocess.check_output(
         ["git", *args], cwd=ROOT, text=True, stderr=subprocess.STDOUT
     ).strip()
+
+
+def _historical_tree_paths(commit: str) -> tuple[str, ...]:
+    output = _git_text("ls-tree", "-r", "--name-only", commit)
+    return tuple(output.splitlines()) if output else ()
+
+
+def _is_gate2_path(path: str) -> bool:
+    normalized = path.casefold()
+    return (
+        normalized.startswith("pasko_agent_society/gate2")
+        or normalized.startswith("preregistrations/gate_2")
+        or normalized.startswith("prompts/gate2_")
+        or normalized.startswith("schemas/gate2_")
+        or normalized.startswith("manifests/gate2_")
+        or normalized.startswith("scripts/gate2_")
+        or normalized.startswith("tests/test_gate2_")
+    )
+
+
+def validate_historical_gate2_boundary(
+    validation_report: Mapping[str, Any],
+    historical_trees: Mapping[str, tuple[str, ...]] | None = None,
+) -> None:
+    """Prove the Gate 1.2 freeze boundary from immutable evidence and trees.
+
+    The current checkout is intentionally irrelevant: later gates may add new
+    source while the historical Gate 1.2 evidence remains unchanged.
+    """
+
+    if validation_report.get("package_boundary", {}).get("gate2_started") is not False:
+        raise ValueError("Gate 2 historical boundary differs")
+    trees = historical_trees or {
+        label: _historical_tree_paths(commit)
+        for label, commit in HISTORICAL_GATE2_ABSENCE_COMMITS.items()
+    }
+    if set(trees) != set(HISTORICAL_GATE2_ABSENCE_COMMITS):
+        raise ValueError("Gate 2 historical freeze set differs")
+    for label, paths in trees.items():
+        if any(_is_gate2_path(path) for path in paths):
+            raise ValueError(f"Gate 2 entered historical freeze tree: {label}")
 
 
 def _verify_content_hash(value: Mapping[str, Any], expected: str | None = None) -> None:
@@ -342,8 +392,7 @@ def validate_result_package() -> dict[str, Any]:
     validation = _read_json(RESULTS / "validation-report.json")
     if reproduction.get("status") != "PASS" or validation.get("status") != "PASS":
         raise ValueError("Reproducibility or validation report does not pass")
-    if validation.get("package_boundary", {}).get("gate2_started") is not False:
-        raise ValueError("Gate 2 boundary differs")
+    validate_historical_gate2_boundary(validation)
 
     for tag, (expected_object, expected_target) in EXPECTED_TAGS.items():
         if _git_text("rev-parse", tag) != expected_object:
@@ -360,9 +409,6 @@ def validate_result_package() -> dict[str, Any]:
         raise ValueError("Raw Gate 1.2 chunks entered the compact package")
     if (ROOT / "pasko_agent_society" / "gate12" / "llm_adapter.py").exists():
         raise ValueError("An LLM adapter entered Gate 1.2")
-    if any((ROOT / "pasko_agent_society").glob("gate2*")):
-        raise ValueError("Gate 2 implementation entered the repository")
-
     return {
         "schema_version": "gate12-result-package-validation-v1",
         "status": "PASS",
