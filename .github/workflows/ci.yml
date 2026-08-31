@@ -39,5 +39,10 @@ jobs:
           elif [ -f manifests/gate1_2_suite_v1.json ]; then
             python scripts/validate_gate12_implementation.py
           fi
+      - name: Gate 2 implementation evidence
+        run: |
+          if [ -f manifests/gate2_peer_exposure_v1.json ]; then
+            python scripts/validate_gate2_implementation.py
+          fi
       - name: Whitespace check
         run: git diff --check

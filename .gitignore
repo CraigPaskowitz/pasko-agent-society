@@ -9,3 +9,6 @@ dist/
 results/generated/
 artifacts/gate1_1_primary_v1/
 artifacts/gate1_2_v1/
+artifacts/gate2_peer_exposure_v1/
+artifacts/gate2_nonproduction_smoke/
+artifacts/gate2_preflight/

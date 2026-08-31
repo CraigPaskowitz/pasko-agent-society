@@ -1,0 +1,24 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "campaign_id": {"type": "string"},
+    "campaign_spec_hash": {"type": "string"},
+    "condition_results": {"type": ["object", "null"]},
+    "content_hash": {"type": "string"},
+    "implementation_commit": {"type": "string"},
+    "implementation_source_hash": {"type": "string"},
+    "invalid_reason_codes": {"type": "array"},
+    "pair_id": {"type": "string"},
+    "schema_version": {"const": "gate2-population-chunk-v1"},
+    "slot_records": {"type": "array"},
+    "technical_validity": {"enum": ["VALID", "TECHNICALLY_INVALID"]}
+  },
+  "required": [
+    "schema_version", "campaign_id", "campaign_spec_hash",
+    "implementation_commit", "implementation_source_hash", "pair_id",
+    "technical_validity", "slot_records", "condition_results",
+    "invalid_reason_codes", "content_hash"
+  ],
+  "title": "gate2-population-chunk-v1",
+  "type": "object"
+}

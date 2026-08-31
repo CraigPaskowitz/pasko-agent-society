@@ -1,0 +1,28 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "campaign_id": {"type": "string"},
+    "condition": {"enum": ["T2", "T5"]},
+    "content_hash": {"type": "string"},
+    "logical_slot_id": {"type": "string"},
+    "pair_id": {"type": "string"},
+    "prompt_asset_hashes": {"type": "object"},
+    "protocol_id": {"const": "PAS-GATE-2-PEER-EXPOSURE-V1"},
+    "protocol_namespace": {"const": "gate2-v1"},
+    "request_body": {"type": "object"},
+    "request_content_hash": {"type": "string"},
+    "schema_version": {"const": "gate2-model-decision-request-v1"},
+    "source_agent_id": {"type": "string"},
+    "target_agent_id": {"type": "string"},
+    "condition_order": {"type": "array"},
+    "tools": {"maxItems": 0, "type": "array"}
+  },
+  "required": [
+    "schema_version", "protocol_id", "protocol_namespace", "campaign_id",
+    "pair_id", "source_agent_id", "target_agent_id", "condition",
+    "logical_slot_id", "condition_order", "request_content_hash",
+    "request_body", "prompt_asset_hashes", "tools", "content_hash"
+  ],
+  "title": "gate2-model-decision-request-v1",
+  "type": "object"
+}

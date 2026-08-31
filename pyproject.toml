@@ -24,6 +24,7 @@ dependencies = []
 pasko-agent-society = "pasko_agent_society.cli:main"
 pasko-agent-society-gate11 = "pasko_agent_society.gate11_cli:main"
 pasko-agent-society-gate12 = "pasko_agent_society.gate12.cli:main"
+pasko-agent-society-gate2 = "pasko_agent_society.gate2.cli:main"
 
 [tool.setuptools.packages.find]
 include = ["pasko_agent_society*"]

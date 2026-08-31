@@ -1,0 +1,41 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "action_type": {"type": ["string", "null"]},
+    "attempt_number": {"maximum": 3, "minimum": 1, "type": "integer"},
+    "behavioral_valid": {"type": "boolean"},
+    "completed_at": {"type": "string"},
+    "content_hash": {"type": "string"},
+    "disposition": {"type": "string"},
+    "http_status": {"type": ["integer", "null"]},
+    "logical_slot_id": {"type": "string"},
+    "normalized_response": {"type": "object"},
+    "provider_response_id": {"type": ["string", "null"]},
+    "raw_provider_response": {"type": ["object", "null"]},
+    "raw_provider_response_hash": {"type": ["string", "null"]},
+    "refusal_status": {"type": "boolean"},
+    "refusal_text": {"type": ["string", "null"]},
+    "request_content_hash": {"type": "string"},
+    "request_record_hash": {"type": "string"},
+    "requested_model": {"const": "gpt-5.4-mini-2026-03-17"},
+    "response_status": {"type": ["string", "null"]},
+    "returned_model": {"type": ["string", "null"]},
+    "returned_service_tier": {"type": ["string", "null"]},
+    "schema_version": {"const": "gate2-provider-attempt-v1"},
+    "started_at": {"type": "string"},
+    "technical_error_code": {"type": ["string", "null"]},
+    "technical_error_metadata": {"type": ["object", "null"]},
+    "usage": {"type": "object"}
+  },
+  "required": [
+    "schema_version", "logical_slot_id", "request_record_hash",
+    "request_content_hash", "attempt_number", "started_at", "completed_at",
+    "http_status", "provider_response_id", "requested_model", "returned_model",
+    "response_status", "returned_service_tier", "usage", "behavioral_valid",
+    "disposition", "action_type", "refusal_status", "refusal_text",
+    "technical_error_code", "normalized_response", "raw_provider_response",
+    "raw_provider_response_hash", "technical_error_metadata", "content_hash"
+  ],
+  "title": "gate2-provider-attempt-v1",
+  "type": "object"
+}
