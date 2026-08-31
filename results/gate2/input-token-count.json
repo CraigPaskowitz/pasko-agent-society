@@ -1,0 +1,47 @@
+{
+  "campaign_spec_hash": "sha256:c2e0050c080039b02b28d4f614c8cdc626c17a4fbb0cd0357794b321ac01d65b",
+  "content_hash": "sha256:7977e95d72cc03e6210830754c8af097884e28cdef5f30c7d0875c17f600786e",
+  "counted_at": "2026-08-31T01:28:30.855831Z",
+  "counts": {
+    "T2": 402,
+    "T5": 401
+  },
+  "identity": "NON_GENERATIVE_PROVIDER_INPUT_TOKEN_COUNT",
+  "production_outcome_generating_calls": 0,
+  "provider_evidence": {
+    "T2": {
+      "input_tokens": 402,
+      "object": "response.input_tokens"
+    },
+    "T5": {
+      "input_tokens": 401,
+      "object": "response.input_tokens"
+    }
+  },
+  "request_byte_identity": {
+    "body_hashes": {
+      "T2": "sha256:980f94ed6d8298f35e823bf7320c2fe4f2f551f898de0794536218b824f8835b",
+      "T5": "sha256:d450c336d04b0d23bdab8ac4270a05a053dba24528f8153bcde8d92a7437372c"
+    },
+    "canonical_byte_lengths": {
+      "T2": 2282,
+      "T5": 2282
+    },
+    "model_visible_user_hashes": {
+      "T2": "bf0c24c7747c5db361bf76c15ced6300f7752d169b2bbc75e1848069e744eed7",
+      "T5": "4fd7b5f9aaec0c27a6ffd8aa7ec4e536d541ff8e9ff4ed9686a4ff6b248f9a17"
+    }
+  },
+  "schema_version": "gate2-input-token-count-v1",
+  "token_count_request_hashes": {
+    "T2": "sha256:3b9d9a9c6529c4a51780d34ae16bb8e6e69365e696f524c10499d153ae523684",
+    "T5": "sha256:8108e53585d47f46f79dc4fe3e1c1f437d2cdb51961f9d0178e30682f915d1be"
+  },
+  "token_count_request_projection": [
+    "model",
+    "input",
+    "reasoning",
+    "text",
+    "tools"
+  ]
+}

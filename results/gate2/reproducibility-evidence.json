@@ -1,0 +1,13 @@
+{
+  "completion_manifest_reconstruction": "PASS",
+  "content_hash": "sha256:035c5a81405cf497881df14ac46b98a5f0afc07cc463e918f9b820969e6aa34a",
+  "environment_replay_status": "PASS",
+  "environment_replayed_populations": 200,
+  "frozen_corpus_replay": "PASS",
+  "ordered_attempt_evidence_hash": "sha256:44d4d15d264f0f090b5b06819dfdcf2ee904b9cd9f980dcf375104d72bdb5d87",
+  "ordered_population_ensemble_hash": "sha256:4371ecb8548337aa69de6e9f1ac20b180dd06cbceb182d4fdb2b8cf61782bc8a",
+  "ordered_request_evidence_hash": "sha256:bf7035a4d1c06d814f7569980ab59e4c605e078961de4f698cb0c630f3189eea",
+  "primary_analysis_reconstruction": "PASS",
+  "provider_generation_reproduction_claimed": false,
+  "schema_version": "gate2-reproducibility-evidence-v1"
+}

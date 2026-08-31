@@ -1,0 +1,123 @@
+{
+  "completed_at": "2026-08-31T01:27:05.449666Z",
+  "content_hash": "sha256:833d80f0721a905781863bee72c752ad56c8538238da7604dcba39abf10a706e",
+  "http_status": 200,
+  "identity": "NONPRODUCTION_PROVIDER_SMOKE_TEST",
+  "model_requested": "gpt-5.4-mini-2026-03-17",
+  "request_hash": "sha256:a4e6ee591997d5965229790993d233dd8e70dcd90fdcb2acd7587f39739114a0",
+  "sanitized_response": {
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1788139625,
+    "created_at": 1788139623,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "id": "resp_0bf8e4f8baeb8bf3016a94d867eed487d18ed198a35c4ebaa5",
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 64,
+    "max_tool_calls": null,
+    "metadata": {},
+    "model": "gpt-5.4-mini-2026-03-17",
+    "moderation": null,
+    "object": "response",
+    "output": [
+      {
+        "content": [
+          {
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\"status\":\"OK\"}",
+            "type": "output_text"
+          }
+        ],
+        "id": "msg_0bf8e4f8baeb8bf3016a94d869158487d196fe42d810ec2b4c",
+        "phase": "final_answer",
+        "role": "assistant",
+        "status": "completed",
+        "type": "message"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "status": "completed",
+    "store": false,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "description": null,
+        "name": "gate2-provider-smoke-v1",
+        "schema": {
+          "additionalProperties": false,
+          "properties": {
+            "status": {
+              "enum": [
+                "OK"
+              ],
+              "type": "string"
+            }
+          },
+          "required": [
+            "status"
+          ],
+          "type": "object"
+        },
+        "strict": true,
+        "type": "json_schema"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 45,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 18,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 63
+    },
+    "user": null
+  },
+  "schema_version": "gate2-nonproduction-provider-smoke-v1",
+  "scientifically_unrelated_to_T2_T5": true,
+  "started_at": "2026-08-31T01:27:02.888192Z"
+}

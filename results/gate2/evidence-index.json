@@ -1,0 +1,63 @@
+{
+  "canonical_analysis_content_hash": "sha256:5904e29d34a8af4d8d41986a3c584a77a7c374dd732b6853625e6c992e9936b0",
+  "canonical_completion_content_hash": "sha256:e28e1a3fc3c357e202ec7fe37ef62e62a18dd1739afd417a359681058b85c6b5",
+  "content_hash": "sha256:14f190fc7f28de2dc0aef1fe4fa2fb32e71dc7816768b27686b7e315da169356",
+  "member_count": 13,
+  "members": [
+    {
+      "path": "GATE_2_RESULT_REPORT.md",
+      "sha256": "e0a6460db856e69a42ce7fab8a082ec8bcf7e61dc8b939a9dca3ae072e9f692f"
+    },
+    {
+      "path": "campaign-specification.json",
+      "sha256": "4095b219a6516d346fc0bb8c3b6e5705e81450aede1bf813e63ad0b7ef2b0261"
+    },
+    {
+      "path": "checkpoint.json",
+      "sha256": "7113497651ff8948bae3bb3c815bcd6bbf211e8ccefa24b15dc0f9afa00cdf6d"
+    },
+    {
+      "path": "completion-manifest.json",
+      "sha256": "1f836baed6f4666c5398726f2d96fa92b0761d1e67626842f90387e798fea2a3"
+    },
+    {
+      "path": "execution-authorization.json",
+      "sha256": "9a3d77ee468f04360453f06e8d3777f8b067f6fd80f15b456a8c02cf64fa6528"
+    },
+    {
+      "path": "gate2_passport.json",
+      "sha256": "a39601fdabe8f3e23b402449f6ded5cf8979304f1886427d7f4d7f887a741076"
+    },
+    {
+      "path": "input-token-count.json",
+      "sha256": "94c40fa0d314a3e95522b94c38b1a9ddb4ffc1772600313ce96c555205caf8b8"
+    },
+    {
+      "path": "pre-execution-receipt.json",
+      "sha256": "7c2b721b6709ac159180208b218a260b3f20f5959a7f4987552d47f47c9daa43"
+    },
+    {
+      "path": "primary-analysis.json",
+      "sha256": "f5aae962fd7499a3bff695085775de995d1db68aa8f028d402d6be80bd288e50"
+    },
+    {
+      "path": "provider-evidence-index.json",
+      "sha256": "de80da1a4d9a05e966e8fa52befc855284caa7320991b86d160378b5d3a78c32"
+    },
+    {
+      "path": "provider-smoke.json",
+      "sha256": "06d21fcf7934590796f6fa542e42c8e566571e85d94c7ee8cbb26d026ed6e9bd"
+    },
+    {
+      "path": "reproducibility-evidence.json",
+      "sha256": "8da202ff673421799136999932cc8d5991df89c477f669285c1ce60196533566"
+    },
+    {
+      "path": "validation-report.json",
+      "sha256": "a2ad0a45806b694399e194d04019ae04d604062fd4b47fc3f1f2a444a11c3994"
+    }
+  ],
+  "provider_evidence_content_hash": "sha256:017f433ccffe2286430f9432ff75d7ae87eb4651cec055f7a69016a554971754",
+  "publication_status": "LOCAL_CANDIDATE_NOT_PUBLISHED",
+  "schema_version": "gate2-result-evidence-index-v1"
+}

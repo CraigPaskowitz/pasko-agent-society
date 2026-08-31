@@ -44,5 +44,10 @@ jobs:
           if [ -f manifests/gate2_peer_exposure_v1.json ]; then
             python scripts/validate_gate2_implementation.py
           fi
+      - name: Gate 2 compact result evidence
+        run: |
+          if [ -d results/gate2 ]; then
+            python scripts/validate_gate2_result.py results/gate2
+          fi
       - name: Whitespace check
         run: git diff --check

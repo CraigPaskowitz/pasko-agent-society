@@ -1,0 +1,11 @@
+{
+  "authorized": true,
+  "campaign_id": "gate2-peer-exposure-200-valid-plus-20-reserve-v1",
+  "campaign_spec_hash": "sha256:c2e0050c080039b02b28d4f614c8cdc626c17a4fbb0cd0357794b321ac01d65b",
+  "content_hash": "sha256:0eae6a72a81adf95a08736604364a7decb50d2c6139b282585f3c9e450603148",
+  "implementation_commit": "a39d0d52e1b3a3696a1c76125ef93673eac81438",
+  "implementation_source_hash": "e05e7576e4d9d9a13950f12efe2e50ebff0b2abbcae6f3b41b9e9b892f50e1ca",
+  "preregistration_tag": "gate2-prereg-v1",
+  "production_model_calls_before_authorization": 0,
+  "schema_version": "gate2-execution-authorization-v1"
+}

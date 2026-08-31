@@ -1,0 +1,58 @@
+{
+  "campaign_spec_hash": "sha256:c2e0050c080039b02b28d4f614c8cdc626c17a4fbb0cd0357794b321ac01d65b",
+  "checkpoint": null,
+  "completed_populations": 0,
+  "completion_manifest": null,
+  "content_hash": "sha256:c266bbe84513e7d31d8ab89db88d3ea459ad0f68e736857d8cb5c17700e56e53",
+  "gate1_2_result": {
+    "commit": "618e0322376005d1aa7eb783c93518d46773724a",
+    "tag": "gate1.2-result-v1"
+  },
+  "gate2_implementation": {
+    "scientific_code_commit": "a39d0d52e1b3a3696a1c76125ef93673eac81438",
+    "source_bundle_sha256": "e05e7576e4d9d9a13950f12efe2e50ebff0b2abbcae6f3b41b9e9b892f50e1ca",
+    "tag": "gate2-impl-v2",
+    "tag_resolved_commit": "c5b6c9dc1665602ad953e852c85f45286e8711c5"
+  },
+  "gate2_preregistration": {
+    "commit": "0ea4bb8e2731ec5355a20dbff1cb3ff95532fb7f",
+    "document_sha256": "5841b2e62514e13f102104d7226739ce0ba6ccd0d08f349bfd0fd2be24985400",
+    "tag": "gate2-prereg-v1"
+  },
+  "input_token_count_evidence_hash": "sha256:7977e95d72cc03e6210830754c8af097884e28cdef5f30c7d0875c17f600786e",
+  "model": "gpt-5.4-mini-2026-03-17",
+  "pending_valid_populations": 200,
+  "primary_analysis": null,
+  "primary_pair_count": 200,
+  "production_outcome_generating_calls": 0,
+  "production_requests": 0,
+  "prompt_asset_hashes": {
+    "prompts/gate2_peer_exposure_v1/control-artifact.json": "b072d21ed55beb8514d03555dae6f75529ccc7f41e66eecddfbc8569e840072c",
+    "prompts/gate2_peer_exposure_v1/developer.txt": "a620010f57a6467741319c15d8bb2e9ea427e014304040c501d2aa4998e40f18",
+    "prompts/gate2_peer_exposure_v1/observation-base.json": "39abeff6fffd43efd78d474f7e306132f9c44f6d05f1817840b63bc55aa5bc98",
+    "prompts/gate2_peer_exposure_v1/system.txt": "4430c4d9e92a4a8d689ad66e836b8be7bc67f87d9c6bab40c7acfb275ed48c16",
+    "prompts/gate2_peer_exposure_v1/treatment-artifact.json": "704bc8dde7bee83ad7ac04ce235cfa04e6b6f3a0fdeef9469fccb1632c8e7a36",
+    "schemas/gate2_action_choice_v1.json": "79f8ceb35a0182358570a9585f0833152814ea3ca236b5ccaa7f839bfb716e57"
+  },
+  "recorded_at": "2026-08-31T01:28:46.839058Z",
+  "request_byte_identity": {
+    "body_hashes": {
+      "T2": "sha256:980f94ed6d8298f35e823bf7320c2fe4f2f551f898de0794536218b824f8835b",
+      "T5": "sha256:d450c336d04b0d23bdab8ac4270a05a053dba24528f8153bcde8d92a7437372c"
+    },
+    "canonical_byte_lengths": {
+      "T2": 2282,
+      "T5": 2282
+    },
+    "model_visible_user_hashes": {
+      "T2": "bf0c24c7747c5db361bf76c15ced6300f7752d169b2bbc75e1848069e744eed7",
+      "T5": "4fd7b5f9aaec0c27a6ffd8aa7ec4e536d541ff8e9ff4ed9686a4ff6b248f9a17"
+    }
+  },
+  "reserve_ids": [
+    200,
+    219
+  ],
+  "schema_version": "gate2-zero-data-receipt-v1",
+  "technical_invalid_populations": 0
+}

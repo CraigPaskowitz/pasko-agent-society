@@ -1,0 +1,81 @@
+{
+  "analyzed_populations": 200,
+  "behavioral_slots": 21600,
+  "campaign_spec_hash": "sha256:c2e0050c080039b02b28d4f614c8cdc626c17a4fbb0cd0357794b321ac01d65b",
+  "completion_manifest_hash": "sha256:e28e1a3fc3c357e202ec7fe37ef62e62a18dd1739afd417a359681058b85c6b5",
+  "content_hash": "sha256:fce21770e0e1c1686eb5206e6c3a30330b443f701d1e1c05a29e8418af399576",
+  "excluded_technical_populations": [
+    "gate2-pair-017",
+    "gate2-pair-030",
+    "gate2-pair-040",
+    "gate2-pair-083"
+  ],
+  "gate2_1_started": false,
+  "implementation": {
+    "scientific_code_commit": "a39d0d52e1b3a3696a1c76125ef93673eac81438",
+    "source_bundle_sha256": "e05e7576e4d9d9a13950f12efe2e50ebff0b2abbcae6f3b41b9e9b892f50e1ca",
+    "tag": "gate2-impl-v2",
+    "tag_resolved_commit": "c5b6c9dc1665602ad953e852c85f45286e8711c5"
+  },
+  "limitations": [
+    "one dated model snapshot",
+    "one bounded one-step synthetic task",
+    "provider generations are not bit-for-bit reproducible",
+    "no topology or propagation inference",
+    "no generalization to real societies or all language models"
+  ],
+  "model": "gpt-5.4-mini-2026-03-17",
+  "nonproduction_provider_smoke_hash": "sha256:833d80f0721a905781863bee72c752ad56c8538238da7604dcba39abf10a706e",
+  "practical_magnitude_met": false,
+  "preregistration": {
+    "commit": "0ea4bb8e2731ec5355a20dbff1cb3ff95532fb7f",
+    "document_sha256": "5841b2e62514e13f102104d7226739ce0ba6ccd0d08f349bfd0fd2be24985400",
+    "tag": "gate2-prereg-v1"
+  },
+  "primary_analysis_hash": "sha256:5904e29d34a8af4d8d41986a3c584a77a7c374dd732b6853625e6c992e9936b0",
+  "primary_decision": "FAIL_TO_SUPPORT_H1",
+  "prompt_asset_hashes": {
+    "prompts/gate2_peer_exposure_v1/control-artifact.json": "b072d21ed55beb8514d03555dae6f75529ccc7f41e66eecddfbc8569e840072c",
+    "prompts/gate2_peer_exposure_v1/developer.txt": "a620010f57a6467741319c15d8bb2e9ea427e014304040c501d2aa4998e40f18",
+    "prompts/gate2_peer_exposure_v1/observation-base.json": "39abeff6fffd43efd78d474f7e306132f9c44f6d05f1817840b63bc55aa5bc98",
+    "prompts/gate2_peer_exposure_v1/system.txt": "4430c4d9e92a4a8d689ad66e836b8be7bc67f87d9c6bab40c7acfb275ed48c16",
+    "prompts/gate2_peer_exposure_v1/treatment-artifact.json": "704bc8dde7bee83ad7ac04ce235cfa04e6b6f3a0fdeef9469fccb1632c8e7a36",
+    "schemas/gate2_action_choice_v1.json": "79f8ceb35a0182358570a9585f0833152814ea3ca236b5ccaa7f839bfb716e57"
+  },
+  "provider_accounting": {
+    "cached_input_tokens": 0,
+    "estimated_standard_cost_usd": 8.612292,
+    "estimated_standard_cost_usd_without_cache_discount": 8.612292,
+    "input_tokens": 8840632,
+    "latency": {
+      "attempts_with_timestamps": 23227,
+      "maximum_seconds": 43.802203,
+      "mean_seconds": 0.8019897480518363,
+      "median_seconds": 0.744557,
+      "minimum_seconds": 0.341781,
+      "nearest_rank_p95_seconds": 1.142657
+    },
+    "logical_decision_slots_dispatched": 22032,
+    "output_tokens": 440404,
+    "pricing_usd_per_million": {
+      "cached_input": 0.075,
+      "input": 0.75,
+      "output": 4.5
+    },
+    "provider_attempt_count": 23227,
+    "retry_attempt_count": 1195,
+    "technical_failure_attempt_count": 1208,
+    "technical_failure_codes": {
+      "HTTP_429": 1208
+    }
+  },
+  "provider_attempts": 23227,
+  "provider_evidence_index_hash": "sha256:017f433ccffe2286430f9432ff75d7ae87eb4651cec055f7a69016a554971754",
+  "publication_status": "LOCAL_CANDIDATE_NOT_PUBLISHED",
+  "refusal_counts": {
+    "T2": 0,
+    "T5": 0
+  },
+  "schema_version": "gate2-passport-v1",
+  "status": "VALID"
+}

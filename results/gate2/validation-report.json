@@ -1,0 +1,15 @@
+{
+  "analysis_hash": "sha256:5904e29d34a8af4d8d41986a3c584a77a7c374dd732b6853625e6c992e9936b0",
+  "analysis_run_count": 1,
+  "behavioral_slots": 21600,
+  "completion_manifest_hash": "sha256:e28e1a3fc3c357e202ec7fe37ef62e62a18dd1739afd417a359681058b85c6b5",
+  "condition_runs": 400,
+  "content_hash": "sha256:a31effdb18e072dca9e1f5aed0feadc56b6c2c38bbbb4d6aefa8d57d53b91359",
+  "gate2_1_started": false,
+  "provider_attempts": 23227,
+  "retry_attempts": 1195,
+  "schema_version": "gate2-result-validation-v1",
+  "status": "PASS",
+  "technical_invalid_populations": 4,
+  "valid_populations": 200
+}

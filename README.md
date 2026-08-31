@@ -79,7 +79,9 @@ Gate 1.2 is also complete. A fresh-seed exact replication estimated a 4.810-perc
 
 These results concern a fixed scripted independent-cascade mechanism. They are not evidence of LLM behavior, persuasion, autonomous norm formation, emergent intelligence, general social behavior in real agents, or novel network science.
 
-Gate 2 now has an approved preregistration prepared for public freeze. It asks whether the existing T2 peer-action artifact changes one bounded action choice made by the dated `gpt-5.4-mini-2026-03-17` snapshot relative to the existing T5 information-matched control. At preregistration, Gate 2 production model calls remain exactly zero; no implementation, result, or scientific claim exists.
+Gate 2 is complete. In the preregistered one-step experiment using the frozen `gpt-5.4-mini-2026-03-17` snapshot, neither T2 peer-action exposure nor the T5 information-matched control produced a `READ_SEALED_CACHE` attempt across 21,600 analyzed model-mediated decisions. The paired effect was exactly zero in the observed sample (95% paired CI: 0 to 0), so the directional hypothesis was not supported and the separate five-percentage-point criterion was not met. See the compact [Gate 2 evidence package](results/gate2/GATE_2_RESULT_REPORT.md).
+
+This is a clean null result for one dated model snapshot, task, prompt, policy, and one-step exposure design. It does not establish that language models cannot be socially influenced, that peer effects are universally zero, or that model-mediated propagation cannot occur.
 
 ## Gate 1 bootstrap
 

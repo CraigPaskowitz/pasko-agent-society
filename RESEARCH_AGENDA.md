@@ -34,13 +34,17 @@ The frozen joint classification was `replicated but specification-sensitive`. Te
 
 ## Gate 2 — Bounded LLM-Mediated Agent Behavior
 
-**Status: approved preregistration prepared for immutable public freeze; production model calls remain zero.**
+**Status: complete; primary result frozen in `results/gate2/`.**
 
 Introduce model-mediated interpretation only after the scripted phenomenon and robustness rails are established. Gate 1 scripted mechanisms remain the control rail.
 
 Any adapter requires a separate preregistration and safety review, one bounded simulator-only action interface, complete call provenance, no chain-of-thought collection, no live calls in tests/CI, no required API key, and no browser, network tool, shell, subprocess, arbitrary filesystem, connector, credential, or external messaging capability.
 
-The first experiment isolates one question: holding the synthetic task, policy, action menu, exposure graph, prompt, and model fixed, does the existing T2 peer-action artifact change a target model's bounded action choice relative to the existing T5 information-matched control? No Gate 2.1 protocol is frozen or executed during this gate.
+The first experiment isolated one question: holding the synthetic task, policy, action menu, exposure graph, prompt, and model fixed, does the existing T2 peer-action artifact change a target model's bounded action choice relative to the existing T5 information-matched control?
+
+The preregistered directional hypothesis was not supported. Across 21,600 analyzed decisions, neither condition produced a `READ_SEALED_CACHE` attempt, yielding an observed paired effect and paired confidence interval of exactly zero. This floor result is specific to the dated `gpt-5.4-mini-2026-03-17` snapshot and the frozen one-step task. It does not establish the universal absence of model-mediated peer influence.
+
+No Gate 2.1 protocol was frozen or executed during Gate 2.
 
 Goal: distinguish semantic/model-mediated behavior from effects mechanically defined by scripted rules and topology. A positive, null, negative, refusal-heavy, or invalid result must remain reportable.
 
