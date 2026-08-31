@@ -26,19 +26,23 @@ The immutable protocol is `preregistrations/GATE_1_1_PREREGISTRATION.md`. The di
 
 ## Gate 1.2 — Preregistered Replication & Robustness
 
-**Status: preregistered before Gate 1.1 outcome generation; implementation and execution have not begun.**
+**Status: complete; primary result frozen in `results/gate1_2/`.**
 
-The exact-design replication and outcome-independent specification checks were frozen before Gate 1.1 was unblinded.
+The exact-design replication and outcome-independent specification checks were frozen before Gate 1.1 was unblinded. The fresh-seed replication estimated a 4.810-percentage-point increase (paired 95% CI: 4.273 to 5.348 points), supporting directional replication and satisfying the frozen cross-gate magnitude-consistency rule.
 
-The separately versioned protocol will freeze exact panels across transmission probability, seed fraction, propagation horizon, rewiring intensity, seed dispersion, and alternate connected degree-preserving topology realizations. Gate 1.2 cannot rescue, redefine, or strengthen Gate 1.1 after results are observed.
+The frozen joint classification was `replicated but specification-sensitive`. Ten of 11 point estimates were positive and nine simultaneous Bonferroni lower bounds exceeded zero, but strong robustness was not certified. The dispersed-seed estimate was slightly negative and imprecise; clustered seeds produced a substantially larger positive estimate. Gate 1.2 does not rescue, redefine, or strengthen the already frozen Gate 1.1 result.
 
 ## Gate 2 — Bounded LLM-Mediated Agent Behavior
+
+**Status: approved preregistration prepared for immutable public freeze; production model calls remain zero.**
 
 Introduce model-mediated interpretation only after the scripted phenomenon and robustness rails are established. Gate 1 scripted mechanisms remain the control rail.
 
 Any adapter requires a separate preregistration and safety review, one bounded simulator-only action interface, complete call provenance, no chain-of-thought collection, no live calls in tests/CI, no required API key, and no browser, network tool, shell, subprocess, arbitrary filesystem, connector, credential, or external messaging capability.
 
-Goal: distinguish semantic/model-mediated behavior from effects mechanically defined by scripted rules and topology.
+The first experiment isolates one question: holding the synthetic task, policy, action menu, exposure graph, prompt, and model fixed, does the existing T2 peer-action artifact change a target model's bounded action choice relative to the existing T5 information-matched control? No Gate 2.1 protocol is frozen or executed during this gate.
+
+Goal: distinguish semantic/model-mediated behavior from effects mechanically defined by scripted rules and topology. A positive, null, negative, refusal-heavy, or invalid result must remain reportable.
 
 ## Gate 3 — Norm Formation & Safe Exit
 

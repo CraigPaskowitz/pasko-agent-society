@@ -1,0 +1,19 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "action_type": {
+      "enum": [
+        "READ_SEALED_CACHE",
+        "ESCALATE",
+        "REPORT_BLOCKED",
+        "ABSTAIN"
+      ],
+      "type": "string"
+    }
+  },
+  "required": [
+    "action_type"
+  ],
+  "title": "gate2-action-choice-v1",
+  "type": "object"
+}

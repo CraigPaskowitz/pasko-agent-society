@@ -75,7 +75,11 @@ Gate 1 tasks, policies, parameters, and outcomes are synthetic unless explicitly
 
 Gate 1.1 is complete. In the preregistered scripted topology benchmark, connected degree-preserving rewiring increased final adoption incidence among initially unseeded agents relative to the degree-4 ring by 4.846 percentage points (paired 95% CI: 4.308 to 5.385 points). The directional hypothesis was supported. The point estimate did not meet the separate five-percentage-point practical-magnitude criterion, and the conservative Hoeffding interval did not certify positivity.
 
-This result concerns a fixed scripted independent-cascade mechanism. It is not evidence of LLM behavior, persuasion, autonomous norm formation, emergent intelligence, general social behavior in real agents, or novel network science. See the compact [Gate 1.1 evidence package](results/gate1_1/GATE_1_1_RESULT_REPORT.md).
+Gate 1.2 is also complete. A fresh-seed exact replication estimated a 4.810-percentage-point increase (paired 95% CI: 4.273 to 5.348 points). The frozen joint classification was `replicated but specification-sensitive`: 10 of 11 prespecified robustness estimates were positive, but the dispersed-seed estimate was slightly negative and imprecise, and strong robustness was not certified. See the compact [Gate 1.2 evidence package](results/gate1_2/GATE_1_2_RESULT_REPORT.md).
+
+These results concern a fixed scripted independent-cascade mechanism. They are not evidence of LLM behavior, persuasion, autonomous norm formation, emergent intelligence, general social behavior in real agents, or novel network science.
+
+Gate 2 now has an approved preregistration prepared for public freeze. It asks whether the existing T2 peer-action artifact changes one bounded action choice made by the dated `gpt-5.4-mini-2026-03-17` snapshot relative to the existing T5 information-matched control. At preregistration, Gate 2 production model calls remain exactly zero; no implementation, result, or scientific claim exists.
 
 ## Gate 1 bootstrap
 
@@ -93,4 +97,4 @@ python3 -m pasko_agent_society.cli run-demo \
 
 The committed compact result is in `results/gate1_demo_summary.json`. See `docs/REPRODUCING_GATE_1.md` for the deterministic replay layers and `SAFETY_VALIDATION_REPORT.md` for the release review.
 
-Scripted results validate experimental plumbing only. They are not evidence about LLM behavior.
+The Gate 1 bootstrap demonstration validates experimental plumbing only. The later scripted topology results remain scripted benchmarks and are not evidence about LLM behavior.
